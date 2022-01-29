@@ -6,7 +6,11 @@ Permite identificar ficheros RBF de Cores de SiDi.
 
 ## ZX ROM Catalog
 
-Permite identificar tanto ficheros con ROM de ZX Spectrum y algunos de sus dispositivos (Multiface, esxdos, etc.) como de ficheros utilizados por los distintos Cores de ZX Spectrum.
+Permite identificar tanto ficheros con ROM de ZX Spectrum y algunos de sus dispositivos (Multiface, esxdos, etc.) como los ficheros utilizados por los distintos Cores de ZX Spectrum.
+
+## macOS_install_arm-none-eabi-gcc.sh
+
+Script que permite instalar lo necesario en macOS para compilar el firmware de la placa.
 
 ## License
 
