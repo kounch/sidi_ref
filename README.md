@@ -4,7 +4,7 @@ En este repositorio hay documentación y algunas utilidades para usar SiDi FPGA.
 
 [Documentación](./doc/Indice.md)
 
-[Software](./src/README.md)
+[Utilidades](./src/README.md)
 
 ## License
 

@@ -6,6 +6,8 @@
 
 [Cores](./Cores.md)
 
+[Referencias](./Referencias.md)
+
 ## License
 
 BSD 2-Clause License
