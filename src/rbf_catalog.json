@@ -1,0 +1,2273 @@
+{
+    "version": "20220106.001",
+    "sidi": {
+        "description": "MiST / Mistica FPGA16 / SiDi",
+        "hashtype": "sha256sum",
+        "extensions": ["RBF"],
+        "parts": {
+            "header": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6AF7F7F7F7F7F7F3FB"
+        },
+        "cores": {
+            "Menu": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "785f0f262163a0ca7a642981c9d177d0aa4045042dda4bfa38f536cd1f84eb6b",
+                            "1 (Unknown)": "97246a3dea4c66f13926e39e17d85ebde8e47583adb1a83be2b8457b28ae3786"
+                        }
+                    }
+                }
+            },
+            "Acorn Archimedes": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191129": "1bc24d797e013ac28cff3cdb37bc0bf5907cb50c5d13bebe3846971e3d4d715e",
+                            "20200516": "73e0b9b53a9b459db883a1c243457a9be2f6505ae57a52c446e4dbdf207ad584",
+                            "20200521": "582a04044a84c8756f976efa2c0de0f1b8654ed703273f1d969e88cb24708b58",
+                            "29200522": "40c6fc834b5eeb4f180e39a569fbd517278bd851114b14f6eba124016e1d5d50",
+                            "20200808": "c18e5c35068f39aa99a3c6ce77a3c7dada6fe2ea65cf639be191be72d6cf4a9b"
+                        }
+                    }
+                }
+            },
+            "Amiga (Minimig)": {
+                "features": {
+                    "SD": [["FAT16"], ""],
+                    "Video": [["VGA", "RGB"], ""]
+                },
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20201122": "f709e3c4d70d9b2b81a120775cf489373783abb4362504bc8a7f1177bbf24638",
+                            "20200804": "322c0658f65a5b35463e660334a83d58876333d8d69beebea4cc6034417866ed",
+                            "20200725": "ce69fa0aee63aaa43c55391e3a01992e30855b5ea3b888820877c27c10e81b96",
+                            "20201221": "27d561099db68bac4abb72c5104adf9aaa2c6a29a977a70d26819a7d54add092",
+                            "20210730": "df011bad24b6e5da88104dcff5aaacb6bf72d655004ad13b784403ed2fa0bd6c",
+                            "20211212": "97094c15ed5e39154aacda036888572f4b1bff170b6336030fb5f445bc84a97f",
+                            "20191121": "c4d6028410ddd4d35a0a370f801ab08aa8cdd1e51bf3ff3fdc966967239a68ba",
+                            "20191213": "7bcf720d150d3ad1289972b6a8fafa9d2381dd781416b9762626270d94371113",
+                            "20200209": "416245bbec421812afb68d919b65437d933b0b7178909f6eb2a29eec7ea02bea",
+                            "20200410": "d51bdbc6195d5686dccebe8ac4d80c52c18761b42a374966e219ba2080dedc59",
+                            "20200614": "8c3d1d291842bc767d9011b349506add215cb301fe3bbd3295f1223b3b8172ae",
+                            "20201006": "b491a155862d158622a632f16e86d642b158572be09e7216ebaf1df6363cf3ad",
+                            "20200420 (Test)": "d51bdbc6195d5686dccebe8ac4d80c52c18761b42a374966e219ba2080dedc59"
+                        }
+                    }
+                }
+            },
+            "Amstrad CPC": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200120-x": "cb95c42fac06f6aef3d6594248ca5c1bf5e3d6b0386811e04a13059cfe325213",
+                            "20200624-x": "d7967008463c4c0e4ac156cadbfa1370e60a15d00cc797b4ddd287aa7d7e5fbf",
+                            "20191121": "009a4c293443c2362e5056cd75240022e815ead5b5049fe63a78b4f5ed7f9ddd",
+                            "20200704": "0a104216643968949026ce57a221e64397d7faf3e017319c075cb1f27d771161",
+                            "20200715": "b8b99009968ec5f7ce7755c7890beb9b8c8bd6825394cd462534ba51728a4fba",
+                            "20201215": "ae20d8562d7e3af53939ba24a3d6539392451f41133653c8c51d3ad8c3f0912a",
+                            "20201120": "5b6a06e3a24aee8d68fea05b1334e6b4beabdbbbfbad382c33c591b78c1b17a8",
+                            "20210112": "304997a99bc97ef2363d78db2cbeb6f5db301ad7d2c95ccda22edd3a6083f7a9",
+                            "20210301": "3486b2f27b45ef24c3ca5f3fd78ff0d2d8c152e6c62de9ac40c65bff5f434212",
+                            "20211212": "880a921de6eb21e2ea67ec66a8992fae7da7af5ba0a4e12a8b8dd7bbe91a5a01"
+                            
+                        }
+                    }
+                }
+            },
+            "APF TV Fun": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "4b6e7db5dafc781dd2abb0c479675e63b7171bda5f16ccebbde53f1130ce68e6"
+                        }
+                    }
+                }
+            },
+            "Apogee BK-01/Radio-86RK": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200120": "827c4d1f997389544d2f6aa2da35bb55fdc517ddc77edf751bcc55ac94b36f96"
+                        }
+                    }
+                }
+            },
+            "Apple IIe": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "d14f1190a7204242c17fa4f21206924489d7bb88dc1cd8dd2c397272d454c04c"
+                        }
+                    }
+                }
+            },
+            "Apple Mac Plus": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191218": "988b5cc33f220a129112df279b537f6ffcca4332b7ee8547ad2d4950146e771e",
+                            "20200419": "e281d6010c93833dd80ab01e8fec9cd26f64f58f7ece1e1548c511f0b6d292d5",
+                            "20210317": "28564505e126814a8de2af227578caf2d1f5a362148ec5941c0f7296a12b436d",
+                            "0 (Jepalza)": "4f4a026de09519390c01520d2939d82c61463b2d3a3cb1b19ca641041b7f1660",
+                            "20210622": "437cbb7fb4ee5e170ef78245df3b330caeeef3bce61d6027d6b20f9a32d4a351"
+                        }
+                    }
+                }
+            },
+            "Atari 800": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210202": "001288d4f32ea6f075c503274052a327a8cad7c348ae810816130434abd5d3b3",
+                            "0 RGB": "19ef64fee319da19845280ad09ab77475e81b70830f57dbfdc2018cae5193ef0",
+                            "0 VGA": "bd451ee583d4f511540014a4663c69a28045b8705a49d47d4817e712ce80c0a0",
+                            "0 arreglo-pantalla": "3c490939f0d21c5c30c0b4090546596875cf483f7e6d09dbdda17d3ff044fa8b",
+                            "20210402": "5c08283c5339913292f275af36723a8ea68734e6182870700a005a49369d3fe5"
+                        }
+                    }
+                }
+            },
+            "Atari 2600": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200106": "1628601bbe64c2b1ea3cf92f40326025d1d4b94a8e7edce70a92236d1a4853d5",
+                            "20200125": "2811c75eb585347fbc103eaabf72fd0368679d08d804463c18244cb213d20608",
+                            "20200307": "a052fbbe7159ae24e91d7d5cdee2964f4d35529497ec557e7aedce626c47b87f",
+                            "20200812": "4b5dfb8c20a318741c4c4f438da1f7c07ee9a94f0d52164a4534350ecb60d51c"
+                        }
+                    }
+                }
+            },
+            "Atari 5200": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200221": "924fda5c0a2a39dfc75d548540908b07ad64a497a36b802ec334589ab0316888"
+                        }
+                    }
+                }
+            },
+            "Atari ST/STe MiSTery": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191201": "b0ec0f6fbe439aa8f1a8f3df5a4191ee92142abfbc75df791b426e73e0889fc5",
+                            "20200125": "8a38d6f949c17c9d72b6e34827c6eace4d4ec2e2764e4b4fa6b622eef2f68e98",
+                            "20200209": "edd92cfe95eaef0143e88628fc4a2fd0335b552e60f7b024ddf6cc2c9ad95ebe",
+                            "20200508": "98d94d0f09ed2ec38f57553367b43ffe20f0f70d236e0a00573547cfced63d5c",
+                            "20200529": "d64cdd905048b805bd2c7d571c9fba266566049656fdca01aa2b3c10e99af8f0",
+                            "20200626": "2e132b908cd86c56407619cb289bed7e23b3d78702d618a33749cd6056493055",
+                            "20200725": "35b28be1c2942cbd6b96b17c6703d037c2f785f67cc753b80a69eadaacfa16a6",
+                            "20201122": "50daa6a3f3712131f1721432c5ee40141c8bb43fcabd227390cd6fea99539ec0",
+                            "20210819": "c3bcd5378bd2ef8f8e844b952af74af96d923ed39ec0887bcb9ad001f788fa18",
+                            "20211006": "1ebfb5962f120441db6b5a8dbe87ba2f9638a1bd3d40f4f314c8a535965e1e98",
+                            "20211013": "4fefaa7e3f6d9434ec81d80217c5a075709aca7b8e2120661c74a0544c63a403"
+                        }
+                    }
+                }
+            },
+            "Atari ST": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191121": "aa3837da93e6f54c2c827217408e7054d45ae04eb64275d958e7d4a4870c2062"
+                        }
+                    }
+                }
+            },
+            "Bally Astrocade": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191226": "2ba4955f47c6e806e405c03d9d990eb162e8bc9462f65fafb1cd78ff31e768c6",
+                            "20200125": "2ba4955f47c6e806e405c03d9d990eb162e8bc9462f65fafb1cd78ff31e768c6"
+                        }
+                    }
+                }
+            },
+            "BBC Micro": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "10191229": "b7ddf58917f53131a19789d752c2a38d53d09e344d787282c038f90720b373b2",
+                            "10200521": "1a756365fd77dcd84f05f53243cc93b52d7da5e0ee95615c70332f19790b1dac",
+                            "10200604": "b23a109db8b30b09c934f6aa34ae04ba41c4ec802487f63bdacb95f5b6398dad",
+                            "10200530": "a4a0c801f109ce672716a18f637391881f6e8dab27ed9a5da6dd018e74bfd89f",
+                            "20200123": "8909c02dccb0066c7d69d2fd9a0958bd3ba526364f262871101d582d0c582e24",
+                            "20210404": "f0ce365b0c69c916d80a6383029d75d322d451739fd5d5b27cd3a6ce9cc873ba"
+                        }
+                    }
+                }
+            },
+            "BK0011M": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200120": "f8077f205fbd808936ae74eada98164a132474562777e2c8f78155dc5af20355"
+                        }
+                    }
+                }
+            },
+            "Camputers Lynx": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200925": "70c2e40d608ba1ffb38aa881424e8b94f10909ee8075cbca3d28fcbab1eaeaea",
+                            "0 (Unknown)": "0535f8afdf42e2d9cc446a02d6360a0cb50cf2a807b24803d4428e378509ddaa"
+                        }
+                    }
+                }
+            },
+            "CHIP-8": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200126": "d582ae45918785f97d707354b38d79e56efdded97f23d2cceb1375922d532e41"
+                        }
+                    }
+                }
+            },
+            "ColecoVision": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210301": "2bddc29c4902592f42dcf496f27afc6281426a3359a9ce2f66612ec2bcb46d74",
+                            "20200106": "18e711f3e550ab925a5a5febcbb4169d5eeef19cd0d57e5ec26f464c0fa3e927",
+                            "20200125": "5a033380febbd244c1f8b8604d9399822ba142c1cf7d30eaccc931f072c09ab2"
+                        }
+                    }
+                }
+            },
+            "Commodore 16": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191226": "c585712426750e1e6b071fc3126bc9104acf38fc95dc1809831beec365541407",
+                            "20200123": "ac8488b25aea9f69b164ca6fa6e2ed01ff7759b929206444d4f5e0a150e0ba77",
+                            "20210401": "69a9abe08a02eab421d6ce1565d599687e7a37b11acae523c53686ccf670ab68"
+                        }
+                    }
+                }
+            },
+            "Commodore 64": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210323": "bc25d9936ad0dc8672633885e8b4f11375aad35599408711275836999dcaa870",
+                            "0 colodore_b01": "7ece5a2c45a0aa52354d01f2a1a360a7b6a982621d11306964dfe7710f1c3888",
+                            "0 colodore_b02": "ebfa94f7eb33a7a3b62f1252bc5d6c86a3abceed2607141221d5d6b4911b29b2",
+                            "0 colodore_b03": "0c64c43d82be52f8cf0edd27f646c7c8e557e8dfc239f00b740287d63392a6a7",
+                            "0 colodore_b04": "3bb305188aa063fd34dfca6fc51a1f238ddfdbc6a69630ae29c617790cc60e43",
+                            "0 191125": "56945911480f506eb8c03344d87e159bc7ca63c37c66535c5f1274feb7b2f852",
+                            "20200326": "df3fa94b8a60676989f52af0f3d4b327a36805c4d9ec4a3ff3d2010eaba309f4",
+                            "20200426": "e23b51d976a98d1cde5562135f91042a11760d984e167d8851c09a796ce47fd4",
+                            "20191215": "817ee9456ecd7f76af806ac71e21b07e27733123fe1190a9c0ba9e0c5f7298bc",
+                            "20200317": "f823067a0b808308d6b4e7e7d52c27991c4ef6a9b12861ef8b843a8f7a9fb3a8",
+                            "20191218": "7e50ef17dce0fa2ba4ed131f50bf1c0d61f5f9b7aac0cf790b2ec8425c46554a",
+                            "20200328": "a2d3c05a298da8f0f45014ba85cd73062722bc79b13f2b24a093ca2fcb102712",
+                            "20200401": "34afa08e2e0c6fd2b11b5f696d8273c9f8c0691b52e2bfcdbe52215e0ae17c5f",
+                            "20200411": "6fb838bca477e982b56a55b63266255ad326c69d653a68159a58da4a16aec318",
+                            "20200430": "587b74a45c5214dfef0a630b5edfd2045a7395fe5d885f4eb58c513865b09b5a",
+                            "20200925": "41c95a679d3be3bdee50a0513116792626121371d04869b21c06b2c10bf4024a",
+                            "20210226": "7726bd8a571c8a360d0f7902bf9ba37e5d7466357866e349d4b12af3e63177f6",
+                            "20210304": "4f802a19d5bbc2fb0859172002fa638f7b5a5194c8484d8d17e5e693ce7ca851",
+                            "20210325": "f0bdfe4de897f2e002fceca0f8a59e5ef438f009241081d217857c4c795141f6",
+                            "20210411": "598e2679ba18d46fd6593d6835b98020bbb9ae8c502dc63ae7a511499b3f0b36",
+                            "20211005": "0b6901e3e5b85a2ce07c5fd6b4b60b44e742a89e5d974f9f5097731a000dee68",
+                            "0 Alternativo": "7d0866037b9f7a6afa9d1976e4379c9eecc611f952538de03679534b0d3bd1cf",
+                            "211224": "b1352048c6db6189316a8906778105f7fc39f8b889f8f6a1694a5376df61d93e"
+                        }
+                    }
+                }
+            },
+            "Commodore PET": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191226": "57268fb82457a0cc91c9b01a54383d725768319fc677b92c51a2e124691f0e7c",
+                            "20200120": "f51673c68c1fca52a3dffcf4392d7d77b9fc9212ec0a20a033591b912a7c5cd5"
+                        }
+                    }
+                }
+            },
+            "Commodore VIC-20": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191217": "03ea4d857a7dd23ed30c2dea7f5ee2247be07f54b55306d95d558af40c69538a",
+                            "200323": "b086b549de2a10e5f319dd87e15533eb866dd47ba1908fc40f096339da2afe0c",
+                            "20200120": "345ae3c0cd8c3523742e256dd254aa54c5587ac015401380cdf57ceece2d21a4",
+                            "20210301": "1d401ab8b2badce008c56d4c39642f44a4e8492d50cda4834f40bcfbcd47f87d"
+                        }
+                    }
+                }
+            },
+            "EACA 2000 Colour Genie": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210317": "f84ab5bf9d3fe13973b2f53b5696037512456df125bc119a5f6523d00e3d7793"
+                        }
+                    }
+                }
+            },
+            "Game Boy": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200124": "b61fbcff36c2b3cef61eed09053224c909a24d1d0f3ad7b6122f79d9e8e02002",
+                            "20200810": "e3c7e1651c1b6c3b4a629e742f038b279a41f91929749cd5fe63a30403faf0f1",
+                            "20191213": "44cda35bb78977355f5746823b3fb974645cf8f0960475e1d01860fcf4ac32e9"
+                        }
+                    }
+                }
+            },
+            "MSX 1": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200801": "24b3e34d7384b0a153a29b50cef95b4777b500d300e7d801769585019306db5f",
+                            "20200730": "2285b56047767b55327b60ca7acc744fbae487befb6b2965d68bd45b44230316",
+                            "20200808": "dac241f785df551141af64369f1ece773bc76c72c00735d05c6dcaefbebc9bec",
+                            "20211125": "d64e63bdc6c80bc93dbed39c31895c5807d4b146082eb7acec938a143ce68981"
+                        }
+                    }
+                }
+            },
+            "MSX 2": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200427 en": "1169b1b25a4cd619f33425dc5f277e4506279ed42f1fea88a32bf6f75e58e777",
+                            "20191210 es": "1a7606bd59bbd0caa74ded6112f210172a82d260325bfe358f4c9676e55ee9d8",
+                            "20191121": "b231d3da4262a31cb0141b8d96cc7a936c96b8c7414dc720b567b3dbf6ba8173",
+                            "20191210": "98ddd59ba9b5fac4dfba607c8dc3fec3d4c450ef7287950a8d41fd1bba0a2e9e",
+                            "20200427": "c8bcfafec5b26b7e39f16f7dfbaccab5653023d402e681748e1d22fed182fa8b",
+                            "0 MSX2PACK": "39080b4757d4e3fd85e8d21bdf964591fff22138d70ad201c4fd9133963bf0a3",
+                            "20200821": "3f307a0fb45a48b4f3868fd5a8282ba16cbc22c55da98bf513b39d54043ccc23",
+                            "20200120": "08901f8fcf6e12a6638427718fc40c3d7cd89cd324a08e4dd776edeebaa86696",
+                            "20211125": "e16d0f937465bedee5d5cfe50473c14998d026dfd1eabd204c1e2bf142f18e28"
+                            
+                        }
+                    }
+                }
+            },
+            "Mattel Aquarius": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200125": "04a7aeeabdf6926faefde02b96ad586252a69c580ec8edadcc3480f2a0a439e3",
+                            "0 (Unknown)": "4ae9c9288a72ea0278b3b7129056674a9e000a2c6f6fa6c6666769ee330a46be"
+                        }
+                    }
+                }
+            },
+            "Memotech MTX500": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "afc0420046123cdcd00402fe27e78201d023bc9a02df297c4cfc3609d485aee3"
+                        }
+                    }
+                }
+            },
+            "Multicomp":{
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200125": "6eea09547a1c168022924ade9afe68613ebd749200377164852301e63849f7a3"
+                        }
+                    }
+                }
+            },
+            "Next186 (PC XT)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210716": "49ad7aad83cfb8a5dbcf4f420701970e1a3b877beb927097c19954752e51af7e",
+                            "20210723": "7c6044e5f8cb70d8092c2bd6462616169011b75aa025bcfa03e5bea97813902d",
+                            "20210803": "565bc3723b27641a7826dbe949bcef1c4fd5bef4a080be87e0f4b09f4edde802"
+                        }
+                    }
+                }
+            },
+            "Nintendo Entertainment System (NES)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191126": "b705921f750f27304d14025e3b3c59ba281c5871b8c381021f5d4245d7f223b4",
+                            "20200120": "2994f8851da2fcdd5dc9e3f862dbb8f8684ccfbbbe10b90ef0448c133405bcbe",
+                            "20200124": "9867384f989caf1cf8d11b84affce86e489786592787f7b61101f2e3f5692a72",
+                            "20200219": "a1306a075598f72204972427ec595dc2ded999738ab2e6f28c356a2f87baf2af",
+                            "20210317": "949fa4e11dfef07ee4a0abd7f58ed15dd863082f5e6c8420149f8b8e43fa974c",
+                            "20210824": "434ce2deb70e9316a964329e9219af89d026a8d2f659e87312e09889750bf149"
+                        }
+                    }
+                }
+            },
+            "Oric Atmos": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "2595c647271a33008ff6db76b037f230f17c56b44ce66a6cb46d522b70d85d6c",
+                            "1 (Unknown)": "00d096412be14dd09ac235657947372846dd8fb5518472cadd7161c886b5480b",
+                            "20200120": "9796e68f10fcad5f54c30e509f2a357c4c8490f7a2604e964d66b50222a33538",
+                            "20200328": "0779ea3ab8c6cb91fb52ee43d1bda0ccf3becace39cf6f6498cf45a50473b772",
+                            "20200320": "ae40b840af17cc2c83bb2d8250f88c5ac69b59291e4275c5aafa8d6a1b42cc8c",
+                            "20200601 RGB": "3d03a51aae79f86dd1fd3c31c90e18df65a07de9f5f392dc5133ec2d9db36f89",
+                            "20200328 b": "fbf4dc434bf04159df3b638ed44288d6113c30062a8e9bc20de0a60a5072b2b2",
+                            "20210404": "0d7b7b1ddbcdd7973c23a1d7937aa11f480937b49ead2a2c7afe4c99109694fb"
+                        }
+                    }
+                }
+            },
+            "Sam Coupe": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191226": "48a2a431ede22d958c0cec9bfc2cd4f8eeec5395c9b33f4438f6efba75b93f75",
+                            "20200120": "3dfe391fa2a311d328af40ba0ef42edc77261ce2ab3447b70df253527b28e68c"
+                        }
+                    }
+                }
+            },
+            "Sega Master System (SMS)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191124": "b038ff612e3988190aa8b5ea513fded1cd7d81800bf89668ebb970ed90b97895",
+                            "20200125": "8139d6b88981e04b93a7df98af17389ebce2e596081e80d60f887d7adff09bd2",
+                            "200605": "abb8cb285ac59b9197470e673aa9a4c282a390935d3dc006be5762c383c66992",
+                            "1 (Unknown)": "1aca4620047206fe867af590892ba3afa94fcd1110df0b1540a93bcdfb169d5a"
+                        }
+                    }
+                }
+            },
+            "Sega Genesis/Mega Drive ": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210108": "d0d1fcea1fc84d3e6b3ce0c168c5ba48ccd96655239b80cb48ae560b09dfd35e",
+                            "20191127": "c675cd858595962c5d15e5a38c1dff96ed6360172e600efcda4e6e77bfb46d6d",
+                            "20200821": "d971eefbd2015537445890e40ad543893c3c777f5b3ef19a0d0e00b4e7a7c4f7"
+                        }
+                    }
+                }
+            },
+            "Sinclair QL": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191203": "b107f37b8d2ad62d8aea489ce07e6bbdacdd615ac0e1daac640e9789626f084f",
+                            "20200124": "3a4192f7f87396084c619238ca9aadf4f97e13dd4735000a68f975c0c175b129",
+                            "20210723": "c427fd02a2d9d8b8fa49e12c4d0179ba8b8d06351ca8faa61b702fb8f14ae1fe"
+                        }
+                    }
+                }
+            },
+            "Specialist/MX": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200120.": "a5649721e3441520a3e67736fb651214ac6d585ec1b5623e7f0e117cf91d2b26"
+                        }
+                    }
+                }
+            },
+            "Spectravideo SV-328": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210414": "fa10af2408344b23bc8390969064c46aa15ba8f1f2f1a3e0135d907fa5454714"
+                        }
+                    }
+                }
+            },
+            "Super Nintendo Entertainment System (SNES)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191124": "177b90c4df59c9700de385f03460db4aa958c88cf0712d6698ab0893ab89aef3",
+                            "20200217": "ceba498b0636a0fcd47de42e481bdc651ce063d24833759888a22c3aee42a549",
+                            "20200605": "ccb20619caa7d980f593e52b3788377bbbca820e3f300dbf27956fa2f7e27120",
+                            "0 auto": "96bbcd46220a299366306052808748e8e32e01704a712777826ca3d9171c5b29",
+                            "20211006 a": "965ebdfe770c5b49d24407839feda59431e2f09d6cf3a7aed5edf622ce836db6",
+                            "20210226 unofficial": "77d59a4c711a59c3cd396c4c966b7fdfdad0dbb53277f12a8360b321c12ebd43",
+                            "20211008": "5c5c1a3e7cfb1fc18b9ff935f1bff500dd7e0e179287252d47ac6e1a2fc356f7"
+                        }
+                    }
+                }
+            },
+            "Tandy Colour Computer (Coco)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 alpha": "7a3362c32646448fe80e0c4266336e8c8d3f5aa562a6d771c4f4a38df59127bf",
+                            "20200218c alpha": "a331f086f1f64ab9cda197f08999283acf066b50c825eed4e1dcccefade2c8ff",
+                            "20200219b alpha": "2816046937525112f0374ef5e6c30624220f1e41a6da7bf5ad2bc128c99a6c9c",
+                            "20200319a beta": "aec4ad7f963e12affee8af0954df32c5319b95aa6a9e67a81d9f16e97b214def",
+                            "20200518a": "10b194963eb5dbfba92c0a685bf304b88c127c7b71170ff2338ec1311eb7d418"
+                        }
+                    }
+                }
+            },
+            "Ti994a": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210401": "61e6c384015f7e8e57feb2e4cebff1c2a8a8bf1d7d24dbd22190aed938a02ee1",
+                            "20200911": "e1e5ac13f8aba81c8ee1d45f5e373254175f8a6a96580b156a694eaf7a5b868e",
+                            "20201215": "1714da49cf22f896e30c07a8e6773e5912801515869c9aeb42146096c303be8a"
+                        }
+                    }
+                }
+            },
+            "TRS-80": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200125": "df9821397925933dad246fb942ebf5d02eede7a507729765908d89054295db05"
+                        }
+                    }
+                }
+            },
+            "TurboGrafx-16/PC Engine": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 +15deg": "efa6ff8cb8249ba5f8fd9c6bff4adf716c4b89c016e1975c9452fa07f898a4a0",
+                            "20210527": "b0ac5eae4f7a04184caba5f2b3c3bf087fd6ca6ed30a1efb907044c71527847e",
+                            "20210531": "bad4259ae7b32ff1a1e5adb6a13ca06af33c315dd73ad8a7b6a3bc71029c8d91",
+                            "0 CD test": "68669cc164f212bf9d22d7bb23ead6cb1b644b3c18a23cd2cad5f6b3e8964cd3",
+                            "20210102": "ce7d48d5523c9c9a9623429386b689880f3030d089cb72176f279061a202a897",
+                            "20210525": "9f42bbf0db091571dbfec76ccb16d3c1532b46f9f49c7a4482763935594a842a",
+                            "20191205": "e1374f05ef04b17ab00045f6406a2ae0b555f9c76e38f8fd70271c4fb249dac6",
+                            "20200125": "25f77a7cdf98d9b1828e101d2b2767f10e37281ceb15b86264416998c6effadb",
+                            "20211014": "6d5b36f2d0c9a53930c5658ac69fc7846a5085c7fa0b8e59adf515cde859659d"
+                        }
+                    }
+                }
+            },
+            "Vector 06C": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200120": "505e0170d0fc911e44dab9fb6a4af80b33ce1e82a7a8da2705b95f3c8b986fa8"
+                        }
+                    }
+                }
+            },
+            "Vectrex": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "b8ab6abd4d8bdbabbbb674b62b2410a51f488ae47556cf22fdc2a19d8270201e"
+                        }
+                    }
+                }
+            },
+            "Video Technology Laser 350/500/700": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200925": "58aa090900d1984a6ceed7974aa7076c2a1e715976a1a96ae816ed753e612562"
+                        }
+                    }
+                }
+            },
+            "Videopac": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210129": "1c7918432c403349141e898fe929003916bf29fbb9df76408b88c0318ebb55c6",
+                            "20191229": "7587dca3030511a8da96c40c7cf259d9137c5f11ed5f496c2fc06cddb6dfbc00",
+                            "20200125": "7587dca3030511a8da96c40c7cf259d9137c5f11ed5f496c2fc06cddb6dfbc00",
+                            "20210121": "fef9429de3c5166ca3fb0ac844b2cfc035c656f828504a03322a65b0b4899325"
+                        }
+                    }
+                }
+            },
+            "ZX Spectrum": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200627_vol_zero": "aa0f2b0e6df6b1147e7a02312a2fbae82dc1d0e5c662dff31eb9f47b110c1a90",
+                            "20200627_beta": "3d06ed7e97b559ed724eaa24e57b7a1ae8b0058d37aa6df579226633032b67f6",
+                            "20200524": "1adf8fbfc14a6407b4dca7f9cc8124cd7e86ad4071587976bbc4ffef84d8353d",
+                            "20200521": "35412800deba1ac9dc941585a77f0769619541ab904b557bf59f73332e66991b",
+                            "20210824": "169a55f78066f77d8faf779ca0703a50d533dafe02fa8f2e024ad4c797d29304",
+                            "20200809": "ff82dbd38a5f239b6266981a9080aba0531d52e127057732e9afefff1bc78086",
+                            "20200627": "081d92ea1a6ef3ed580ffa10e915eb0d2e6646fd4cf09e47f2179242bb5b2cf6",
+                            "20191120": "47ee56d980cd6bd54332fb700a486b9b77a279e134b73d02e8c9031a955b6b10",
+                            "20200822": "413aa93a5d5b43e742e3b483be8ffba784fc64caaeff9592b4f21d742214a892",
+                            "20201215": "7452f69a721b20dd4b84e57cdfcc265f6a52622e587d3516b63a4396644615aa",
+                            "20210301": "c799ee9ac3c222bd1074a90f43f932532aa2c997c80791e4de2ef0207c5d3aeb",
+                            "20210302": "5a3b50ede16da092d5493f13ac2dd6fc75f61cc28a4f41c80c58923d297d7461",
+                            "20210401": "ce9665d8b9dbed93f8b1ba1b43f58421ce416145bf9f1b61572671bf10d21e9e",
+                            "20210828b": "bcd95f50d3f43cebd256dfb3b06fe1f0f45566bf40f4966209968e377c99ced1",
+                            "20191213": "b0b9f1b7ee9a0345f4b506068fb9c500dfdd666f94818d9d2c450003e69e8a46"
+                        }
+                    }
+                }
+            },
+            "zx48 (Kyp)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 kyp": "dbb200cec331243e4aca69443219e286a3fb6499cc52993414d0f830ea657d36",
+                            "201221": "3f1fa4de63edcd7667617188b727c819ae2dcd054adf4862e1f8301af67f6aab",
+                            "20210502": "fadc6b21f5205720314d516978c32cd8cd0df1a3d3431f7737e40a862a2f73cc"
+                        }
+                    }
+                }
+            },
+            "zx128 (Kyp)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "00 - ZX 128 Kyp": "7c47cb9d2a1b0d42730c4984190c9111a683129061f13630abfadd76680a4a67",
+                            "20210502": "7c47cb9d2a1b0d42730c4984190c9111a683129061f13630abfadd76680a4a67"
+                        }
+                    }
+                }
+            },
+            "ZX Spectrum 128k": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200120": "c173db2965e423c078161596cffde34ceb0868dce143aea58913b3f676692f41"
+                        }
+                    }
+                }
+            },
+            "ZX Spectrum Next": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210330": "e5c4cd90761299ddd09cdcb54c6d7a492a10a555d3405e1d6ca1b4b11142765e",
+                            "20210327": "ac85fbaff2e4946d073e027848b514152a98dc9b5d99e3cd9c7c5795d6131afc"
+                        }
+                    }
+                }
+            },
+            "zx8x": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "2fb6aa85fb01e31376c3845d0a6da3d7948e6042c2e37f9530b2dd158580b5d8",
+                            "1 (Unknown)": "2fb6aa85fb01e31376c3845d0a6da3d7948e6042c2e37f9530b2dd158580b5d8",
+                            "20200125": "7563ff0742900739e36389e79e3144cbd65c86c88b78d24066c516cdd5c42b64"
+                        }
+                    }
+                }
+            },
+            "Atari BW Raster Hardware/CanyonBomber": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "95a83b7b96dea90f5731f7ef72f67bb43193cffcdc124e37ac30894ea7a02d1d"
+                        }
+                    }
+                }
+            },
+            "Atari BW Raster Hardware/Dominos": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "3e8a0abd344fca84e08bedf0e7816ac360a51fb4c1ac097e1727669e26ce7eaf"
+                        }
+                    }
+                }
+            },            
+            "Atari BW Raster Hardware/Sprint2": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "4885d58f2717a6f6b94dd59bcb616ea48a717d18660b785d3864b6769f06ee28"
+                        }
+                    }
+                }
+            },
+            "Atari BW Raster Hardware/SprintOne": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "951f1746691cf241e33466b4de55520cdc666c261b005ace74e6fcd7dbab81d4"
+                        }
+                    }
+                }
+            },
+            "Atari BW Raster Hardware/SuperBreakout": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "4731bc34b03668973877f7860e77d4883f14bcaca7d78565cebe4052a2bf14aa"
+                        }
+                    }
+                }
+            },
+            "Atari BW Raster Hardware/UltraTank": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "cd37ef375ad75d7fa857293dee88e070c50fec74232bd43def087f80e9319caa"
+                        }
+                    }
+                }
+            },
+            "Atari Centipede Hardware/Centipede": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "4f4154a6f2367add4398015bfea712d51458f7de10cddb06448689075bde98a2"
+                        }
+                    }
+                }
+            },
+            "Atari Discrete Logic/ComputerSpace": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200216": "54c68b97cc896a509e26d7e88a154b3726feacb659996bd0f978a7f54746edc2"
+                        }
+                    }
+                }
+            },
+            "Atari Tetris/Tetris": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20191228": "529fce91d288bf08860f9934202f2ab107b621edb902e98681628762dac3ce00",
+                            "20200216": "751727525c5c9ec9ae2b7ed6e00c587757bd5010d0765005ed6e0108a1b4f9c3"
+                        }
+                    }
+                }
+            },
+            "Atari Vector/BlackWidow": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "da839fb0b1a1f42dd91592b70303b1aeb06a8e6be88c11eb88e378d00c433018"
+                        }
+                    }
+                }
+            },
+            "Atari Vector/Gravitar": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "687cd14cb3c662b09189fc98e690d7a3f2b4db9da82fce5b81d1015849c3e1b6"
+                        }
+                    }
+                }
+            },
+            "Atari Vector/LunarLander": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "027094abeba34b85a3b43d7609b726cd59c1f2752dfb32a7928714837b505bed"
+                        }
+                    }
+                }
+            },
+            "Bagman Hardware/Bagman": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200127": "32e0d736137879cb3f53105174d4ec271089c341d1402d57abb921d2efde3921"
+                        }
+                    }
+                }
+            },
+            "Bagman Hardware/Botanic": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200127": "81c7cf0ea3629020b99d037145d19650c320e50f77553f85599e33815b220e9f"
+                        }
+                    }
+                }
+            },
+            "Bagman Hardware/Pickin": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200127": "a602859967c0428ede70c9e7f337b071414da4c9da49338df19a77ce311bbef8"
+                        }
+                    }
+                }
+            },
+            "Bagman Hardware/Squash": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200127": "cd9a30312f554c3554965d92cc3d57dbd97044be8ee1baff0ca32f431b39ee44"
+                        }
+                    }
+                }
+            },
+            "Bagman Hardware/SuperBagman": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200127": "0c2b4e1c58d04d4298bed620e3d0bf35608130e9a101086d3565f1ed00252f52"
+                        }
+                    }
+                }
+            },
+            "Berzerk Hardware/Berzerk": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "668bb66bd62593ebeb168f41f85b87a38e1dd3c3acb9665d6bbd1b1dcd5f669b"
+                        }
+                    }
+                }
+            },
+            "Berzerk Hardware/Frenzy": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "fde0d48069e249cdb95c2ccc42f5ef87897dd09180f23a34fbd02050f99ab420"
+                        }
+                    }
+                }
+            },
+            "Berzerk Hardware/MoonWar_berzerk": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "3fd1fd19652cdf4851d80d194afcc171a615a7164cc3d20b1bfaca84a5493dba"
+                        }
+                    }
+                }
+            },
+            "Capcom SonSon Hardware/Sonson": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "09e7188e612b1e7a4d46a55a11eb3a211cfe65ca270ee5fd43fd493f4a557651"
+                        }
+                    }
+                }
+            },
+            "Crazy Climber Hardware/CrazyClimber": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200127": "bddec6963f4b788200663376ae3f13c9f6b2108cf8e96583f1d467666e3225a5"
+                        }
+                    }
+                }
+            },
+            "Crazy Climber Hardware/CrazyKong": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200127": "96966d76c0ddf72ee73c86886b592b8289fa260c8473c43a535b29d00afecb7a"
+                        }
+                    }
+                }
+            },
+            "Crazy Climber Hardware/RiverPatrol": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "341b324fe4ad8a2cb24e80bfe60d72e12c91c2f2928711c158b77ad5760de609",
+                            "20200127": "4484fdaa7fbc9eb218fd749b6a6a78bfddb56fcc2d8b2a551161ce9b65ddacbd"
+                        }
+                    }
+                }
+            },
+            "Crazy Climber Hardware/SilverLand": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200127": "7598faf18dc62d3e67c554bba3123c6c971bba1da3775e4a59438aba707fbc21"
+                        }
+                    }
+                }
+            },
+            "Data East Burger Time Hardware/BurgerTime": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "22cf4a6abf59f277fb2109c79c75765c9803d5a1616dffd8f9070089e62f7dc3"
+                        }
+                    }
+                }
+            },
+            "Data East Burger Time Hardware/BurninRubber": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "1c0aca41144efa2b51a14e1970c4d9afeb451c20169687bd711200176a3569f6"
+                        }
+                    }
+                }
+            },
+            "Dottori-Kun Hardware/DottoriKun": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "05b160dfd741dff3f773f268de9a75ab2e432c030c771aeadf86d652d4ba4c46"
+                        }
+                    }
+                }
+            },
+            "Galaga Hardware/DigDug": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "357358a0fd857c4d07a536ebfe7310a604340c6fc287da48120b34db3491aaca"
+                        }
+                    }
+                }
+            },
+            "Galaga Hardware/Galaga": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "d4251e495efecc7eaffaca88019edab37a3172269091846af857275f70bf70a0"
+                        }
+                    }
+                }
+            },
+            "Galaga Hardware/Xevious": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "280a24162718a172a832620ece5f01352ee447efcd36724c2b3455015941e3fa"
+                        }
+                    }
+                }
+            },
+            "Galaxian Hardware/Galaxian": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200302": "3bc7ae524882db6fe47d9517c29e2c1840c123511cae516d62276d3d7761acd0"
+                        }
+                    }
+                }
+            },
+            "Galaxian Hardware/ZigZag": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "e76a6ef60190cdc31f169a1bf023de1b97b90171d499df04bb6cb2cda37a84ea"
+                        }
+                    }
+                }
+            },
+            "IremM52 Hardware/mpatrol": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "c2b0cdd8cd6d1d8501f4307d9350bc623705bdfd4ce236d13f1cb843f5f3f948"
+                        }
+                    }
+                }
+            },
+            "IremM52 Hardware/travrusa": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "d9972dbca727bdb6437ee3ec8c27e74c15135a39fd3e705876d8b5b69e216fd8",
+                            "1 (Unknown)": "aedf13b29e4d2679c83e4b82838f86619732afe8356ab24c4b959f893c657239",
+                            "20200314": "ca0ee6a6ef5e6e49e4b26031c34068fb0ae393c02e6fc72356316ba799dbdc68"
+                        }
+                    }
+                }
+            },
+            "IremM57 Hardware/TropicalAngel": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "08988f233c4d97ec336af7bbc353847fcfef2ca8b6213f7f441dea71fa525d12",
+                            "20200314": "e5004d13471f6b465c0ee4aa32f27010c80bd2d20aa555412279ea4e74a5aae2"
+                        }
+                    }
+                }
+            },
+            "IremM62 Hardware/IremM62": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "91884857ecb3a9c2bb92ed974bf1177a69a9260d7c96668e7c8c07fed8082295",
+                            "20200321": "fbd6b96090fb38db3f3443fd7dd20848939b7c58512d56bbe371bb9e5eda4141"
+                        }
+                    }
+                }
+            },
+            "Konami Classic/Pooyan": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200216": "0d13533549b0b7811ea25b59e1624a39053c472ff92c8a0080da0250f524d0f3"
+                        }
+                    }
+                }
+            },
+            "Konami Classic/PowerSurge": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200216": "6e637e85ec3a922283dc50ddefb1389760c0b2d339e94d42a3b2ecacbeacc96a"
+                        }
+                    }
+                }
+            },
+            "Konami Classic/TimePilot": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200216": "f552f0dd546ce7820e60b932bfd7eba9de7994c1f33c69b2df0846b85d8257af"
+                        }
+                    }
+                }
+            },
+            "Konami Green Beret Hardware/GBeret": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "34c45f0e964c5a064635a16d0a30d59bb6ce7ddb6eda2a7fc145e1d5278e0b87"
+                        }
+                    }
+                }
+            },
+            "Konami Scramble Hardware/Scramble": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200217": "14fbbe3cb0ce8db1daee04c523988acb6aa0072f0ff5fd5fa005a7d805f055ed"
+                        }
+                    }
+                }
+            },
+            "Konami/Finalizer": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220701": "deab7541d6e2fa8f354fb1d58ab900d42d4ba15a479b121660edaeee87bf8db7"
+                        }
+                    }
+                }                
+            },
+            "Konami/Jailbreak": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220701": "7d16f4552142402352bfbcd73f6ed8421e73c6159e9ca3363c0c3e58cd61699b"
+                        }
+                    }
+                }                
+            },
+            "Konami/Gyruss": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220701": "7508f1eaf025f16c7a43681dbb3724482d0e4b4cec9bff486de3d2b526e39bc8"
+                        }
+                    }
+                }                
+            },
+            "Konami/Jackal": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220701": "50c970b7aa25c8b04ed027ab4a3b36438c622e3e602a33f885a3e0be6d200059"
+                        }
+                    }
+                }
+            },         
+            "Konami/Iron Horse": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220701": "6a3ca2e529c1e5da37b4bb4f3dbbeff7f53d2d1cf686774d50c90b96dd3b9ea2"
+                        }
+                    }
+                }                
+            },
+            "Konami Scramble Hardware/TheEnd": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "3b11874243e273a6df9760e1c406f59d5d6c21c267f6dd2d59ff5beafe805822"
+                        }
+                    }
+                }
+            },
+            "Ladybug Hardware/CosmicAvenger": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "5d772c479beb1ccfc41b5d24c30cbafd1a55a0f114799bffef67165d4bd8f436"
+                        }
+                    }
+                }
+            },
+            "Ladybug Hardware/Dorodon": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "e4c7e38c62e31c5fff1b607647adbf1c64948fe19407849690ad3021a273eb56"
+                        }
+                    }
+                }
+            },
+            "Ladybug Hardware/LadyBug": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "52c9d5dfa802cb657db253e7715bd7d9d430c0e01a67bed683bbf323c0afde8a"
+                        }
+                    }
+                }
+            },
+            "Ladybug Hardware/Snapjack": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "4bfdad621261cebc2b8bec88c18223f97e10c02009bca01d2d26b65d9e638539"
+                        }
+                    }
+                }
+            },
+            "Midway MCR 1/mcr1": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "a08f3fe5897bace74c15315a493b8d4bb709c946d44287c4a80dec804ffb362a",
+                            "20200302": "fda576d4c0072490e10d383b83aaaf579b2f73d34899a87cecb1b3082212850f"
+                        }
+                    }
+                }
+            },
+            "Midway MCR 2/Journey": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "b01bfb8df367ef9f3cb924a72aa6da8a97bedcb700e87711fdc438f5aede754e",
+                            "20200218": "663709fbdf9c4a31b95f53dc9049fe93bc70bb83ac112850f131eb2bbd516a52"
+                        }
+                    }
+                }
+            },
+            "Midway MCR 2/mcr2": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "d151883173c8b04924f991a2381d309dae4705f4553dbfa8cd3f0dfcbab084a4",
+                            "20200302": "9779ab28cb2b0341e0b8cc321e00c9bcfd39e8e427e3e2b8c0f8f2bea21ce004"
+                        }
+                    }
+                }
+            },
+            "Midway MCR 3/mcr3": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "02b6e4279bfc9c5b942a0aec83b548ca48b8cff7ca565d6e658562e2b525c0ed",
+                            "1 (Unknown)": "9a6751138f23a31415bebdc4b5627a25716b74e14376bd8bf3843e49878e2266",
+                            "20200302": "e577c4fa3cc91ce5bd7e9c5d2edb26bf2e93263db363a49dba9f28f84ecd62f7"
+                        }
+                    }
+                }
+            },
+            "Midway MCR Scroll/CraterRaider": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "64c3c2886ad7a7bbc29111e30dc3d07faebb2e4b1bfde088f72277c794f69ccf",
+                            "20200216": "c8f3bb13b171b1a2fbcf5568ab975e5c508bf00293bc2b6bbff7063b46938508"
+                        }
+                    }
+                }
+            },
+            "Midway MCR Scroll/SpyHunter": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "50a14beb62d99d7a7fc6b31873bc9e05b32c71e4e2b9cf566405327afcc773d7",
+                            "20200216": "908d77386830ab849f2e25ec672fc92e3bc018c7d20008ea1d6246fa09b279a5"
+                        }
+                    }
+                }
+            },
+            "Midway MCR Scroll/TurboTag": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "83b4d8ec62d57f131ca4ea4e4b2a4937390467162c6b621848236bb917de7ebf",
+                            "20200216": "1d3f5f80bbabc55013603ef9c027172c5b3e496533854b7b475e6ec91265d7c6"
+                        }
+                    }
+                }
+            },
+            "Midway-Taito 8080 Hardware/GunFight": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "6ce56ae13cf4977e2e785b6d76fb9abf5cecac62bc04d248cbbaae00763051ba"
+                        }
+                    }
+                }
+            },
+            "Midway-Taito 8080 Hardware/LunarRescue": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "aa63632e231c8295fc3c437b3ca5b81e489eb78339d3765f9a1d0c4c9141b1bd"
+                        }
+                    }
+                }
+            },
+            "Midway-Taito 8080 Hardware/OzmaWars": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "701fb9df0898153c2b28c3c82dba194db965b00da7962a38f79a8edbf1485bce"
+                        }
+                    }
+                }
+            },
+            "Midway-Taito 8080 Hardware/SpaceInvaders2": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "b9d0ba1686bcb052e0d16a5aa30e8c105d0b36de77413f2118036a8b4e4aaf3b"
+                        }
+                    }
+                }
+            },
+            "Midway-Taito 8080 Hardware/SpaceInvaders": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "410ec0190900a9fc0ab272c5bc699fd8e41ec76a4203da08b2552e1368e24dd2"
+                        }
+                    }
+                }
+            },
+            "Midway-Taito 8080 Hardware/SpaceLaser": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "fa08ad7fed6d518aa174b4d4f984c99a95dc2063bbf5e814b66e2b6f4652ff54"
+                        }
+                    }
+                }
+            },
+            "Midway-Taito 8080 Hardware/SuperEarthInvasion": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "7ea20b213447c18db886ab6bf3c4329e3b6bd8db1115eac97ccd305164b03149"
+                        }
+                    }
+                }
+            },
+            "Midway-Taito 8080 Hardware/Vortex": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "66e61e6471a900ac88b3ca1792213da3cb716d86f0ebb8e3d0da36a452912efa"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/Alibaba": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "5d7f8fb27704d7909b20939bd32beda783884f5009d17b3d13e1711a22f7f56c"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/Birdiy": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "67faff547bbce710f9c0d8cc74829088b512a9e0d481b8c092dbfd3c30507e8d"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/CrushRoller": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "69da6a18c29df086ec55beeab4e03d8c1220f52f07e273f6532efb6e5ca985a3"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/DreamShopper": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "ca927ed880fc0b30cf79f0cc6c8b3403f3bac5989bc055b83220b645aa990b4c"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/Eeekk": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "be9ecdc65bb143d19721775c0e5cac649cd772dc7ccbc757dec83f895d54ae57"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/Eggor": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "4071e902fe496e2d781b7152a2028f4fb90873b2b98a278d22d4a8b1c5f26b99"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/Eyes": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "efa7d6882fb86a54eecd160453aac312f952e469efd3632a4ef72ff38fd80447"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/Gorkans": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "6bb8cf884dc04f10b6f6cefc4882291314a4aba3602106c3928ee400e140d0bd"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/LizardWizard": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "a74e9f9b40894b28341aa8eab791e7bebcb367d666bd8be33a738c8fc7eb08eb"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/MrTNT": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "e255b665871d3ac20707f62bccb4ec40615df767a6ef7b5b0d24cbcc4edaf0fa"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/MsPacman": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "6c117b0d1dfc2fda8a2cf80dccab8b3ad815adc9f7811d1036665b35ebdb8e4d"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/Pacman": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "0f947b44f1c0a139c843c2fdd26f0f2b133f1793d8dc9c83d2d2cda5ee85cc42"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/PacmanClub": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "fd291de50c428d78f9debdea3c79b4e265354783975dab1740f1ddc2f746cb4b"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/PacManicMiner": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "36638dff8953a4cf01ca3b15654421fb1abc93bafab0e43c8dea537c8ed5e1f1"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/PacmanPlus": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "72ed36a26be2790dd2b5d80432963d8a7e3b22057643a1cce9aa4486bc0c7138"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/Pengo": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "70cdfa2f88663259e25ae760fa52513f090e1455c80c9b80849c1494810a0a2a"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/Ponpoko": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "e1c516403aee589905d881749426add31ab64e8c5983f1bcc23bef1c12080961"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/SuperGlob": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "6e80ce88c067ddec26ac280ca6e549969e18e9ab6475fccc7568881b03f1fed4"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/VanVanCar": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "5d1d813661390c5c2a6f6d97fa55e1624a302870ed061a86adac99493118d039"
+                        }
+                    }
+                }
+            },
+            "Namco Pacman Hardware/Woodpecker": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "01fb55589291d7c74960a07e35f61a3d296d4eaab2c7848db3f150948f5048bc"
+                        }
+                    }
+                }
+            },
+            "Namco Rally-X Hardware/RallyX": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "893df8f1e94cf2984b683d1ea7973585e8abd6d8c99fb96461e36196ec4f3a26"
+                        }
+                    }
+                }
+            },
+            "Namco Super Pacman Hardware/Druaga": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200217": "1e198da1fb1cdabe3aff52b1f4107d9666ed39b8292cac65a3abf519258dcce4"
+                        }
+                    }
+                }
+            },
+            "Nintendo Popeye Hardware/Popeye": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200127": "34f606af3abf43f6bf198c87fba23e410e63f152a9e5d092da051c0163a72233"
+                        }
+                    }
+                }
+            },
+            "Nintendo Popeye Hardware/SkySkipper": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "6163bdbc48a39abfe3479287c5c865371f396750238f9584a3b4e68a4c7f6aa7"
+                        }
+                    }
+                }
+            },
+            "Nintendo Radar Scope Hardware/DonkeyKong": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "d91c278c4b3f9b3ddebb660e93842db33e89ba98d110bb173873d658b8825476"
+                        }
+                    }
+                }
+            },
+            "Nintendo Radar Scope Hardware/DonkeyKongJr": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200119": "eca96e0b58aed56cee21581f1c4d3875aa1a90802ecad895253fa3c04a208397"
+                        }
+                    }
+                }
+            },
+            "Non Arcade/2048": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "d44816d6d71eea89ffb12b064c69de7cd3fed22ae4e0ff697b0f0895dae6434a"
+                        }
+                    }
+                }
+            },
+            "Non Arcade/Arkanoid": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "4758a17f35226b7523e8554bb44df98f36f37347cb1855f83cb56d6f9cc496ed"
+                        }
+                    }
+                }
+            },
+            "Non Arcade/FlappyBird": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "MiST": "0d39134fd99ad408d1e3494dd7e0c600b8d60b040f9d8c0185399700693f9e8d"
+                        }
+                    }
+                }
+            },
+            "Non Arcade/RiverRaid": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "d93f43e3573473faf0ea191cd8310247a4020ec1f58748a56e9e0b829b240903"
+                        }
+                    }
+                }
+            },
+            "Nova2001_Hardware/NinjaKun": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "7b52670b895e2f675f80306450018c6cd9f8cdfe2f37965065b7347db7edb3ff"
+                        }
+                    }
+                }
+            },
+            "Phoenix Hardware/Capitol": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "631e125b2a10578b35faa67fdd09a2338bedde0626ee08a27c44de8009b48483"
+                        }
+                    }
+                }
+            },
+            "Phoenix Hardware/Phoenix": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "69e3987e9abdc9c1c8e20b06eeaa263fe9cb8ee85c778baaea1a86036d7bf2c5"
+                        }
+                    }
+                }
+            },
+            "Phoenix Hardware/Pleiads": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "360b4669ce3b073b1e87144c14824c10f20c8ea89858fd16c25d0d8335d9b622"
+                        }
+                    }
+                }
+            },
+            "Sega Zaxxon Hardware/Zaxxon": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "acafdf53407aa07555136ef0cbd348f5b881b45cfe6a2e6afc390dc316be6754"
+                        }
+                    }
+                }
+            },
+            "Tehkan Bombjack Hardware/BombJack": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "cf99535efdfad747f094463d06b096d55a10dc4df5424cf039ba5a4925aaad7b"
+                        }
+                    }
+                }
+            },
+            "Williams 6809 rev.1 Hardware/Defender": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200217": "3fae2803b04915af587fc1a9dbdf8a163e39ad2d5ba0885ff58160216390e6ef"
+                        }
+                    }
+                }
+            },
+            "Williams 6809 rev.1 Hardware/Robotron": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "ee23291e4d2dbf7f692cd398904bd9e637ff22d027a22d9b96a2f8ab1cfbb2d7",
+                            "20200314": "119c43c102e6c28632476931698280b1bf553b7daa465465802711bf2d6d3a7d"
+                        }
+                    }
+                }
+            },
+            "Cannon Ball": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200127": "f0d1d67b96b442bc2460ef19448c79baa2749bc600a7189a2d7a27a9f1e3f452"
+                        }
+                    }
+                }
+            },
+            "Survival": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200118": "29b963dd623c702f8e7cf6e342a06e29337e07767931ffe8acd68c9648ed80d3"
+                        }
+                    }
+                }
+            },
+            "Sega System 1": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210123": "296e66c2e2ab3fbf715ab1418ce542f61ffc88cee4e5f3cbbbad2e5c81eacebb"
+                        }
+                    }
+                }
+            },
+            "1942 (jt1942)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "135f98e87711a72eec4a4f36032e8cd3baf4fc522f9733c392b371ebfa2a1a1e",
+                            "20200311": "54d80f1b79f4e114c1f20b3ac56c2669c9af55a89071ddcb56f7215b0cc086d0",
+                            "20200508": "0b11faead4b9668afa19707ec4da6ff65a2d206414ec7cc269fccac880a2c61e",
+                            "20200728": "4a76604ef4a52ce479552c95b13f77463c4ba533bf8bf4859960a9d8eef2347c",
+                            "20200909": "bf64fa29d77dd9f57560b666f9f645b3b9ccb48975719cf7316cbd7498835452",
+                            "20200914": "9eafcfbf86d17598a137685d4c46fbd5f42992ee982975cd931638c1f01b32ac",
+                            "20201124": "6ab1b27b3572451495504d0de764e2fe94a658347770be6c6ffbea51c634b167",
+                            "20201125": "1d31e8860ecd722e4411223a5da6abad1b3cf3e48680e98059bdb155269093e5",
+                            "20201128": "32c0d614ca5cf860d7d6973640d747f6501a5331d5364b2047cebbe8db0e399b",
+                            "20210115": "aa40bbb3b80c08c8a27eff91d7e8e904cb3df87ed6d9ee63f57194e07179df4b",
+                            "20210212": "c3d842c720099e9bc2648e28798208e46a0b4fd23c2768f481a5852142b066db",
+                            "20210501": "54e1b2892c2b692fc2dd8926669b617c53ed8d19a9f86ac61418f6623589bd51",
+                            "20210710": "67449af1ec9b9fbc9ab82646ef9dea6a5dde9541af0a3476c5bd4465b9cf5bde"
+                        }
+                    }
+                }
+            },
+            "1943 (jt1943)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "62bb8b62aa0a403c14d9153a5e8de1e5ce152ae84b8b473140d2eaf0c6cbff36",
+                            "20200311": "f3b64dc094c96b2a04a5a2b87251512a9b17dbe873677cff0eee9ed8d2df9ed9",
+                            "20200508": "0fc8ec968e3e07c90918fe835a897a7cf967703a01b6e1b48e454ebe40cac438",
+                            "20200728": "12757dd1e3fd26e04e8da1ae7ce89701b4856fe381bebb8fd8bcc8c7f804727e",
+                            "20201124": "98d10531f32043aea9d7670c5b5f5d55c09504c9f4e514767b673cac22df7892",
+                            "20201128": "c522ab6b4cc9171ae26a3b85399ba61b4f91f0d43c5b3a29b21f383167d70fd4",
+                            "20210115": "a7fa2b6a61e799b030a554175e80fe72cc38d37ec6b9651b3047ab52d4978e69",
+                            "20210212": "690287ca34d1c72e6cb93b00d856a3217a3e8b9346fbf9a57c1c139ec646ed7c",
+                            "20210519": "8fb12d1d55f85759ac86735a489260bd0aef24b2863e392c5a1ead94b7b427ca",
+                            "20210527": "861898c7aa8acd1e11ff9053b5c22b1c3fbb83880a50e42e866b8fd6006c4ac6",
+                            "20210611": "ebebd6398c06c51a8b0bae3a803d56baa5f46e263eb646632f2ea136bef7e403",
+                            "20210710": "449a3e1af3a16429c7e17f3db2b580a0d6c2358e55fedd76fbf929eda6f02500"
+                        }
+                    }
+                }
+            },
+            "Bad Dudes vs Dragon Ninja (jtninja)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220107": "71dfca77b0679637e3cc20a83be5f7f785772712523ec6546fd805e00e67c8e0"
+                        }
+                    }
+                }
+            },
+            "Bionic Commando (jtbiocom)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200906": "703fa697977a2f29d9dddc97a553082e67c171c564bc11e4b74eb49bbb0b0a55",
+                            "20200914": "e8c71404fdb326d16669705a62beba5f00d4956d7f9a19fed89f1765b4c27885",
+                            "20201124": "27b5d3b2aec58e93c3b860ce37f28a7f3eb143636ae0c54de2e31a5c86c756a9",
+                            "20201128": "695d77acaf975b5572d39cee576841ea4be2378409de5ba820026fb07e376429",
+                            "20210115": "707bfbdb639c3ea0a7587ed2581fd66406f919fcb9954e122fe828260a28f3cd",
+                            "20210314": "3d4d60c094d907ccef16daa2abedaa7e25cad6170beaf28852ae9807e3055a90"
+                        }
+                    }
+                }
+            },
+            "Black Tiger (jtbtiger)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200311": "fdaf60ae266e5a4ed1f1670a5185c0c5734e812632116464f22da8951800253b",
+                            "20200508": "34a3015df5b17b3db577fee08abafe8a3ae86f51f3dfa97244fbc14f33cb4e9f",
+                            "20200728": "130aeb9ee7b553c069e0232f0f217f38354297989497db68b5ab84f1ed6e1cd4",
+                            "20200909": "3195a6d0b025f9c04774610d453021a7e1b39797df66ae20608453db3c9a90f0",
+                            "20200914": "5f1edb9877f35f787eb93b9b1880b2a5a8da7ae79613433082e04a05192519e5",
+                            "20201124": "0e652a4aea1c29fd636fbd44ead078f8414670887024e76869a048b4ac0a7c9c",
+                            "20201128": "cb6c0c54b9c354ba2d8829c8b2b038eaee587f37b4bc119ea5b23129d753260a",
+                            "20210115": "4f9302dc6c3ae46bfca7c7f97fd6d868169a9d7d130052f7209d5ee0dd220aa0",
+                            "20210212": "75af8fe83664470bda163629fe91d48810734392b2b5be17d0032ad5f0929d41",
+                            "20210527": "dda54c73adbf5e04e57794cfa96c8f66fcfbafe394dfd1bc471b1cd891af7560",
+                            "20210611": "c3b14c9c9c0ac0d552b9917232e645b2b9c044871a1e4fc3906fa02e81c0ae47",
+                            "20210710": "45e675ec87e93db47c9a2a235aacce059b3ecc72f31a2ab1b7697ff013f68863",
+                            "20210904": "4503092ca4654cc1e106d2b7f6ad3342630bb0678bb712511b3093b396fb4152"
+                        }
+                    }
+                }
+            },
+            "Bubble Bobble (jtbubl)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "fbe67ce3d8e75e98eb4056cd1da7ef038f7dba7677c3a3ecc37069fb27e6fea4",
+                            "20200730": "fcb357f9b1803524cb3fafc7512b8f742257a4c5332dc3d0d78ce86b28ed01ba",
+                            "20200815": "9112d44fa8f11ad24a08943d672916f7d769b0dbf973b0a4084a873a8e6b93dc",
+                            "20201217": "34788eda0b6c34c4a956d64af1e2b9ff1873edc9ca39193571427cbcaa398b47",
+                            "20210115": "67bc168dc620842f1a2bfd98da0b5341e638cf7733bdc23fd71ffa62819d99d5",
+                            "20210212": "6a10fbc141a6dd8d84e5f0e646b752467e2f409684171ea4203e5dccc9672bce",
+                            "20210526": "a6bd1926d1685fba0f7910d4438fe42e575abbf4f8fd800d5b50ceb9cfe7c045",
+                            "20210623": "3f42aee014afc3dae6cdbd3c9f7f42834ebf3328339e751a1a472d5cd420aa29",
+                            "20210710": "aa257048b0c204e00b396d73fc3c5efb22fc802867d20da99d3bde18d10c066c",
+                            "20211217": "4c8713fcaf16c3b4a0a4d80484332b4a248b4427e8891de12799e94a33b153ef"
+                        }
+                    }
+                }
+            },
+            "Commando (jtcom)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "d60fe3bf34fdac70b888f4393bdd3569b35ae4e7828639d48bb40455d0131892",
+                            "20200508": "2aad3fa76c58154f420ca062641562e2b0033c2c716126c36248762562632222",
+                            "20200311": "65daedbd306d9d35571c56cba986af1c37d13cd4a762bc6797f8e208308b06aa",
+                            "20200728": "19013d34d4e229f045e9257b39a80022b944ad3a6cb0b6b025d1dadd237ebd8c",
+                            "20201124": "6e6ec9fc6b7bbf8e827f20211a372ac352659e9a11c29f554b93a800b8ea5f53",
+                            "20201128": "5c232db95a632d3b649009c1b87a291f7e222e3da8d4c4852aeca16933cfb971",
+                            "20210115": "3e295bae32a25b92f321caf4f2aa030fb2fd62b568588f3b496a876c697a52bc",
+                            "20210212": "0d1d26a2088b604c70d9eaad7079f0f24481ecab5986ff397b9a1a17064d6402",
+                            "20210418": "589426fd02f98172fcf2532b5fac6eec8ac39acf2f1abc07254faa01754a3002",
+                            "20210527": "dfc42edda02d9592b5fb13cedb22a7e6431687b676cc261a4597af763f23726c",
+                            "20210611": "b5187e5d8bbb1c449e641e6ba43ae66925c12e0814409bc0ee9561ef8d2bb852",
+                            "20210710": "708de7a3a20d420c0e5f6cf26496446fcba3fa06f6e33f2354ece83ee53cbb52"
+                        }
+                    }
+                }
+            },
+            "Combat School (jtcomsc)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0_Unknown": "5d914ff2c49694888d1ea01a32d4465f511c6c2bfb5080e9a93d4b23eadecefb",
+                            "20210226": "a3dc8952eeaf46757fff04ae092ebe8b0f9d7c4358b7741943e1d147aa45595c",
+                            "20210519": "bd35a868ea92ad20d206ad7b2a2816decf3e766390993cf61bd8626b32471384",
+                            "20210520": "078069d8390aec6a020b53a03253299419db7670fce56e1a5eca2ab7d7527f13",
+                            "20210524": "ac0745f42d912cf4bbbcab1776fffc2e74b3fe69db21298ac82a12c85249a0f2",
+                            "20210605": "625c02818ccc905b963a297d2ac9917bb9476855121b0aa3dd3a663f89681600",
+                            "20210710": "9111267740a7f15c623d7db2f72125e7bdfd0ff2103582c5af65a2e188906fc2",
+                            "20211104": "4ceefc6582d845fe908877cfac8399fa4a8f6fd21a779bde6fbc72787be8d181"
+                        }
+                    }
+                }
+            },
+            "Contra (jtcontra)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20201127": "6d882254dad874b48621683f4fe16e3bd1b4b343c6a0d5097a8ee47a0a93ad69",
+                            "20200528": "853cfd860b401c2fe9d6293d5342baae30e06c98f50dbf06426e2508958b801a",
+                            "20210115": "8b59480438c35b34e0d45be297ba0bb1b939b2b2e5ac730ed92128030dac693d",
+                            "20210213": "4d4a888a9dbb92da5450dd15f03ccb30a63e5ab90ec89cb08a3e69cddf3c84c5",
+                            "20210314": "cc4454d6aa3722efa4a138ca12c7baef0f4dc8fddc172626ce2bcf881fece35d",
+                            "20210519": "67b2bb58cf3ae2a151ac537fbdd79996c7846c07c6f7c7a818cfbf8abf16b487",
+                            "20210520": "aa26f17b92d0f3cf6d2a490906b53c0028434870e519be4cf82a268d14310f3e",
+                            "20210524": "fca08a24ebacbef4040d65326ece6c2f1187f87845ee6459184dc1255831d8d1",
+                            "20210605": "03384cbd644ec6c0d1e4a8898be927b5d72b3d50bec756fd1494c86e2f0feaee",
+                            "20210710": "1cd99bc8ca71590b06f447ab8bb52de3dbd3ab7f12ed2e1c7b3997b0a4c64c42",
+                            "20211104": "c797826a48a29d259b63f150000ec5faace55977ea08bf4ea1ff344f34ae92f6"
+                        }
+                    }
+                }
+            },
+            "Capcom System 1 (jtcps1)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200515": "d9f45cc314bbf6aaf311ade83a2828d2dd2459f6e5ddb66766ee85d402abc7f5",
+                            "20200524": "c07204bb0a3af2966cfc488adf665df9d8c9e0f8df6bdd49f397fc4c049237f9",
+                            "20200815": "674d42f2c4e1e039bfca6656f13843c00a08bab8bcbfea0ec6126a22bce6c34c",
+                            "20200910": "807232e7d6b8717229b56fdf6a234324ad821a5d2ce57b79018cf65f0036ef3c",
+                            "20201010": "55409be1c05580483ed13389a0bffa4515120bd10945cd486e8bc6946b03d6f0",
+                            "20201125": "f5e4afc1fd9d1034b029bf20ea340c14958482a74cf21809c48e487d42bd0030",
+                            "20210101": "029109f4d0297fd1301ea6710b7d8bba72a379731d2643f899ef083725d478dc",
+                            "20210102": "5d45ccaf97864c108c2b26c32790b2601a33c37f94daf044e75b16ed374ee731",
+                            "20210115": "83eac0939a1fcbd4a62c6683e3c53b77bf6ec3b2e8e4aa7ee217a58e06aef77a",
+                            "20210117": "b0f9e87b4780442cf363906353ba7f69e08f2d04f4090e4554749ff80454d9f6",
+                            "20210131": "c0de24b36ae4c269a8c5521407de92666f95863697dfc9500c92c981fd1a0941",
+                            "20210201": "be51ba5cda70cb642e0aab0254d62db97dc9b409a32b4e3b54c09e3705690d92",
+                            "20210205": "2425718e91aaa9c66b46410aecbb263940711bd1718b9a3ed53f36024f19dd39",
+                            "20210213": "15b2c6be978ceff5b8871205a2bbeb6ac58debecac24736451f5b051b700257b",
+                            "20210223": "27ce3904933235ac7ff024fb4d2cf513101053b34fd013179d907d9155fa2d33",
+                            "20210307": "0bb577a1b90fd0002580f9f2a3434ffcbab7f00b25564e277e9c82f326091721",
+                            "20210309": "fdd07c5d7e3613c020150b25465c965f0639aaebe8b501caf588da504dc79bf6",
+                            "20210522": "70c63c4bde42c4ca656f2d8f7a0d1709f26f13f73dc40ba6d31bd912b4ee401f",
+                            "20210525": "6ef4666a5e2cbe03752dc654e39cfd2a4eb81986390980a93415090b0401ac5b",
+                            "20210618": "8de7c70271c304848988526a7e02e8a7f7dacf8a1007e82533ddacf75a7a789d",
+                            "20210710": "1e0eccd5ab1c4b8995b3945e338d29e3e7103a60af17ba8b6e8908b31a5a8de7",
+                            "20211217": "65bfcc8cdf8948b0ede55cca53fd527fd8af6531f1ba4fb7e88bb164be82428a",
+                            "20220112": "5408579d4da9dfae1387a7cc9f3fc9934ca2527bfd8c9afb020366d033cd8ddb"
+                        }
+                    }
+                }
+            },
+            "Capcom System 1.5 (jtcps15)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20201211": "61a4a72b4ff886cb6127d1da6ea5b6e0a13e2faa13950aaa785da5a03fad0def",
+                            "20201218": "b64216505e09e05c1d21597bee8db9f315bd755122a16d29b2b6f0123eaec630",
+                            "20201222": "6a7ff9e77d9421dfad8e9297aa64d79b55a4bbd9ba60b8a24b28deda8bcbbfb1",
+                            "20210101": "bc2d358f9b30b6e1b8d989d4fd44bb246d6de5ff983d476934687258c31071b7",
+                            "20210117": "7d87fc5c516c8442bbaef3a0bc655c6441798723b9f3fb0bb374ca3057931fc1",
+                            "20210131": "b399d895b6ecf6531c6643c2a334d6e021988e4b08f5a9298d6f5b2762807718",
+                            "20210201": "3f99cee55fa0a970e6b660a6b2330d31cf0ff41028ca47a66c6a2a9ec3e73fcd",
+                            "20210205": "ad0498c06e30413eecca8cc9b3f89e6580ca2fb26aa18bac397c8441ee7099f6",
+                            "20210213": "e107c11d7053f89535a9c41c318fe0fa9366fca758c42c8e554240830843babe",
+                            "20210522": "b919b6c6d20743356b48bd14248f99c670c1c1e5ea3bd775362a9ec51c6161a1",
+                            "20210525": "44101bfee540430b612e3ef4b289f490ad94e99feddaf6b49030548a5c6a12a8",
+                            "20210529": "f8b706db500292493dd260081b38d9c1182023b10a05338b59c8d07252525648",
+                            "20210618": "f93f415e4b8a86dd3b92fdd02244f05a1f86fe00d950dad6231cf01acb4dad1d",
+                            "20211217": "3fc534ced970d0a1d14836ba7bdbeb64968f640c07e68f0c989abeeb71abf952"
+                        }
+                    }
+                }
+            },
+            "Capcom System 2 (jptcps2)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210702": "ad95d3a4540d6908744e75125dbeba76f0f929902caed2bcc8ddea61730ed397",
+                            "20210710": "ea080f3f06b08cc706c3d0a9bd0635a9d168a5cf087f7e036c15c7caf90710d0",
+                            "20220107": "e716a70293245f5ec7c659be295efa7a04e129bf59ac4be40b682aa9b24dd11e"
+                        }
+                    }
+                }
+            },
+            "Double Dragon (jtdd)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200317": "09679f6a702456c9f55b2eb65cf470dabbc94fefd96457b963075c4512a7b90a",
+                            "20200331": "533cfae218b4d5e78a0d08d664f47f227b5305f0b4e7802fbfe9924fdae1820d",
+                            "20200604": "68bba634adb4ae91c67030aa557d93aa8b81f6a6105b47ac878693fef68de6c2",
+                            "20200830": "3b46acd4a90f17ec16ff27b341efe14b2325dc8791c494151bcca796ac8e115f",
+                            "20210115": "5d2ff216a3d7ff135a6952c2d63ad144f2a9581fcf1d2c62b954b49cbae717f4",
+                            "20210213": "6d5926425c96019b5c0c8db9992b8a2a3d6467dd461be55dc689d54565040fb8",
+                            "20210314": "6861d31a099ea0462b8d0158b9dfd86edaaea9aafaab69e1ad10ac2980be874c",
+                            "20210524": "c252384720910d7ac145d669b3025ce802f711dd6614405b6281ec18d0494aec",
+                            "20210605": "7c8b9ac84f584b4d6e07f770cb8a405d26d60e7c288b44e59aed6b4253b50992",
+                            "20210611": "c30ce590d67c0984cf3dbc4cddcb09a368f8bd4f88b9f00f2cff91d1f310f28f",
+                            "20210710": "6b6179f92efc3db71e64b7e2e7ae06e2d2af203ce71faef5ad9647ff24b83e0b",
+                            "20211121": "e97e2d702616c1960e6bdc776222a746d11bddc1501d2398573ee9075387741c"
+                        }
+                    }
+                }
+            },
+            "Double Dragon 2 (jtdd2)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200319": "64704bbd8a40fe2ef70defa2506733353e15d08480309a4e8fed4948351b15e3",
+                            "20200331": "3e5cd993fc2bd4409cbd49f3b250d73ddc84d2daaa87bc2aba0d97689eccb7c5",
+                            "20200604": "1bc745a15b81fea23755e62e96134d89ba73ee81187f922f0e0d981f1a9e545e",
+                            "20201128": "51f03c46f75808ddb5eba0dbef3d54bbe19ffd849341c74f01b0dd1f84b50ceb",
+                            "20201217": "9018102477af497af61986e520fc758e1d113cdc89cd74e2482ea36616fb3e64",
+                            "20210115": "f732f06c75121c288a3ffb3cd7f12a2892c101e597f1270681e0fb7231cc3f8f",
+                            "20210213": "1ee4a527bf2fea98e3a20c01988cc8d30a8a79b9bf708ff5915f4e51eeb10845",
+                            "20210524": "33e1b427129bf9003dd7d787348cfa84af8270d9996b16ee547f638a5374f75e",
+                            "20210605": "5e259b091cec6cf0d5fec7af6a76e97018e12f61d729a1a369b8b92f5bfcc28d",
+                            "20211121": "f5413365c13dc864ba0b151883a168d018df7c6ee485b034138a0f6cae6afb55"
+                        }
+                    }
+                }
+            },
+            "Exed Exes (jtexed)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210903": "5969b63f9104c5c3b40e4d3004bf6d90d96eeb6640da7f8a8475e954680590ac"
+                        }
+                    }
+                }
+            },
+            "F1 Dream (jtf1drm)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200506": "25425b08e7bcea3f5b1f274798efb2f91202e3716a11f2e9b376b069d363dd75",
+                            "20200508": "25425b08e7bcea3f5b1f274798efb2f91202e3716a11f2e9b376b069d363dd75",
+                            "20200728": "101285136a3702e96c4a88e4a4472ab4d23f2414bc2933b5e4b7523fb067e4ff",
+                            "20201124": "a012963521599e00564295581f7f9f2de067147c72acb6300700d9ae1fb21bf8",
+                            "20201128": "a96c9efe5852ac1e916b5734fd5899cad7ce52950da2013be95ecbce4be44d86",
+                            "20210115": "131cba80f83f70de56e30c82a46170233a9f7fbf28eddc5960b87bc336238087",
+                            "20210527": "df53a4d6cf003b3804c59cdf435824d254bb79d841d4e916e0efcbd779e84724",
+                            "20210611": "6259f2a6a203f9c22650a07b1186dffc41806b25708721c5aa366b828e366905",
+                            "20210618": "0d407c197d00b6400223b6a9c04b0d97e6e5426762d6acc90bb648ca81182dab",
+                            "20210710": "d5ef1430bd6a7da92747b4bd1e43203a699a7ab5867a036d3c7715ae1031cfcb"
+                        }
+                    }
+                }
+            },
+            "Fast Lane (jtflane)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "6c6379277bdcddc44dc094a95bf01613fb38f63972bf2962938b15fd15e74dff",
+                            "20211104": "ccb3bd72d9deecf5649d714276c47b4c38de56175811aef2d85fd9b5683ce16f"
+                        }
+                    }
+                }
+            },
+            "Ghosts'n Goblins (jtgng)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "6b014d19a1d4514d6fb506583af916733d4e479963c9c1a7bc74492ff444b177",
+                            "20200311": "fcaf2bffc6218032b2382e10937733393668e77d5ed46cb16a275c47ddb95adc",
+                            "20200506": "25425b08e7bcea3f5b1f274798efb2f91202e3716a11f2e9b376b069d363dd75",
+                            "20200508": "25425b08e7bcea3f5b1f274798efb2f91202e3716a11f2e9b376b069d363dd75",
+                            "20200728": "101285136a3702e96c4a88e4a4472ab4d23f2414bc2933b5e4b7523fb067e4ff",
+                            "20201124": "a012963521599e00564295581f7f9f2de067147c72acb6300700d9ae1fb21bf8",
+                            "20201128": "a96c9efe5852ac1e916b5734fd5899cad7ce52950da2013be95ecbce4be44d86",
+                            "20210115": "131cba80f83f70de56e30c82a46170233a9f7fbf28eddc5960b87bc336238087",
+                            "20210527": "df53a4d6cf003b3804c59cdf435824d254bb79d841d4e916e0efcbd779e84724",
+                            "20210611": "6259f2a6a203f9c22650a07b1186dffc41806b25708721c5aa366b828e366905",
+                            "20210618": "0d407c197d00b6400223b6a9c04b0d97e6e5426762d6acc90bb648ca81182dab",
+                            "20210710": "7ac161f1126df7f1c649408e7ecb55b44774d73dad0c41741c746ef76ec70a73" 
+                        }
+                    }
+                }
+            },
+            "Gun Smoke (jtgun)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "4b6dd7222ad277f19bfaab708bf822a208b16451fe94d5956a91cac3be6ee501",
+                            "20200311": "3c41ccabd86b5c44c562c0b84d0f72132b100e93623ab0c5b0d0fc0aae2bb490",
+                            "20200508": "5493d99e44f8ab1703190590e87501b60a7dae0bcaccf5ff95a35ccd2b7c9c76",
+                            "20200728": "56777ed834939a91b0f9dd740822913d08d04a21d66f43081d25f25258c57c43",
+                            "20201124": "76fbfe7b2cd84864b781ee8a06e8cb4aa3e419a1372e304638150aeb8cace98c",
+                            "20201128": "95c486c78aeb54f475d0d66fb6b6c5e43e2197623469b1ca6b7d6cd89aa32af6",
+                            "20210115": "ecb177d4db27842822878cb8a12bf961cc5450d3b157dc5f7a1b209ecf261f56",
+                            "20210212": "1f7557361e78dba5c19222140637c4473b47b8581e6a3dcf97bca2f6cfc5be5e",
+                            "20210527": "0f8ef03fb55b453d34ed466e361a9fcee21804588c84d1199d4739237c283866",
+                            "20210611": "a6c4ebe61f815b39b07ea4dd1213983c3af3dc5b66459da132836fc4aa1bdc7e",
+                            "20210710": "bd5d983f76930b1cb4c79fd446783bf2c185e748e8c9d0b66bb3006b69ba705a"
+                        }
+                    }
+                }
+            },
+            "Pirate Ship Higemaru (jthige)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200925": "365fc863124446b0139b93c1b43974ca0f18da3dfe7b0c2a59d42662c54556ee",
+                            "20201124": "ec903c3329c2a522d34473d7c1c4cfb8ab25a3b71515a495da04c95f97b15970",
+                            "20201126": "b16cd021b03b570d59b0f98a526216f08524dd8a1f2574512095ce50df02a5ae",
+                            "20201128": "bf87b3206e2f4ac1276806c1ff84a04fec023c5fafed09cbc28ebc119c2c28e4",
+                            "20210115": "1bf154282e47073fc04edf886ecee60a58ecf602e7e988b4e5d3c1891fc00199",
+                            "20210212": "69b97e053db4a1eec3e60395113ed5c2fc120a33187779b2269af0b337e42a0f",
+                            "20210710": "322645fe5f3bff1b9840dc0c04b088a73d981a9d3886e4a62afdfdc29b639887"
+                        }
+                    }
+                }
+            },
+            "Labyrinth Runner (jtlabrun)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210520": "41985f6d89d6f096e8d63efe4b07e1100c9e523fe71c14103d7a50f92669c215",
+                            "20210524": "02c3f7d924c0477fb500a9c14c2e8bc16803ef6fd464ca3136f943bafe14d85f",
+                            "20210605": "13c73c91944e7f51a6a51d57a4c6d68d615e620a75b3e024d699bda6caf4dd7e",
+                            "20210710": "d1ab5a2266feb3ce747e5a2770c4f984a646ed83d32095bac4f5fb88e8d79ed3",
+                            "20211104": "2d64a14c7a53b6f1b33d45238ddf90d3a4598672d5d0b2574f85cb2a9f2b5e67"
+                        }
+                    }
+                }
+            },
+            "Mikie (jtmikie)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220121": "73fa0b7863470f91b82c25b659aad10a48d143e5aee3b0ab3eedc59c8b954126"
+                        }
+                    }
+                }
+            },
+            "MX5000 (jtmx5k)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "95bbd8abd3cd63d88c514166477fe47b48f04d72d02fc9ab73ffd3194bcff03e",
+                            "20211104": "ce6de0ca4f01e9b8e33b5c5817da8e854ee60eb2bced00c1075a27a5b2df7299"
+                        }
+                    }
+                }
+            },
+            "Robocop (jtcop)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220107": "1b87c9f359960db838c0a552d257148c2a6b5090ab0183d3b6c555b0e5ee3eab"
+                        }
+                    }
+                }
+            },
+            "The Speed Rumbler (jtrumble)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210416": "dada9a3bab1ecd73e15826016eb0b0a9a98b32959978c853499084ca5f025ce4",
+                            "20210605": "78dfd98fc9b7c9e44c2c8d0f0a9a7e89d50e641b9198e6a4eeada45585cbebe3",
+                            "20210611": "dbf670f487cdead105e54c6e2648241e37d22851ec69f05a36172e993374386a",
+                            "20210710": "dd8811f1579f098201481cfb99c84026327fa4c80b495e537c87ab87443fe265"
+                        }
+                    }
+                }
+            },
+            "Side Arms (jtsarms)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200814": "1b7972f2e04485397f5c7156fc081517952a8d7722cde796c617cab9e705cdb7",
+                            "20201124": "e64b299d7c473b8f8ba6f14facfcc0eb5791a8d09798d982e5f68c998ed4210f",
+                            "20201128": "1b3300b4672a416b68c64a63a5321fa92bfe6999ecc49a479644ba19c0ac37b0",
+                            "20210115": "5e6feb4e608f94a62b6e98ba3beb8461990e4580bcd9de5a353626f740db0d0f",
+                            "20210203": "b3f71b1245a44df217b4482d0b2068144e986884cf19f31af6caa0b9aeadab14",
+                            "20210212": "c9c130f8b92e223066aa9e6e7d99235a6d98e056af8e55a68646ab78ba2a28f8",
+                            "20210527": "293e06d241e3399471fc9fe857ab710be8714fca7c381789da460ada7a469b0e",
+                            "20210611": "01e97f93b8024fb14428f90ac4f40083cb7a340bc956757b357aa1bf4c629488",
+                            "20210710": "9f9d5b969d524bfdcec73aa4eb8ae887a95373be94456190341840c5f60eb488"
+                        }
+                    }
+                }
+            },
+            "SectionZ (jtsz)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200421": "fded7ae65ec3a9ac4e291285aeac8ea77ae91401d49f254f7667e1326e02ccfb",
+                            "20200424": "361716a8e244ffdfa0e4e72b573dd13caa072c1625e165df4f003088534e7435",
+                            "20200506": "53f40dcf3390ffe577fcec4482c33b86d588743df44703a94a76df8b24497fb2",
+                            "20200508": "53f40dcf3390ffe577fcec4482c33b86d588743df44703a94a76df8b24497fb2",
+                            "20200728": "061a5fc34c2e41cb47da10afef8c08594021c90396591c2686c573c2e2799a58",
+                            "20200806": "db733ae7862bc97bef1bd0759d43198fbeba9b2f1154e811c873e3fbcc482a1c",
+                            "20200914": "9bf4fec3f16b402c52f61eca2afeb78011d6bc16566e843bee4ac5560e890069",
+                            "20201124": "8529399525761d00cf6685ffa0a219e866d854a6fd368327000e7afba0dbefe2",
+                            "20201128": "0d1c81c480c970c3eeca90d53f381a327a400dbbfada369461e91e8ddc8bcae8",
+                            "20210115": "43512829269c0640e5d0389f1a09d46be3f36f5e945dd65f2276a112a3330e4f",
+                            "20210212": "9feb0eed86d03d3266d30b22036f74b6f76f85794a6bc1c6de1de693e0c4a999",
+                            "20210527": "154f8aa56d1b8a4f4e2fe7db668a649e6d813aebfdb0b7a183535f81794abd2e",
+                            "20210611": "09bee50f6920db6f63108c46ab14e8ed90c0745be772545c6bda6e3b4690ff40",
+                            "20210710": "6c923b027a1409af422737de7422a5bea7bbaa1c431585fa1b0fd599218c6c3a"
+                        }
+                    }
+                }
+            },
+            "Super Basketball (jtbask1)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20211231": "0eb8d6155f98afb4131bb80a07d9931036a68d3652abc0c9c987c8458f8e178b",
+                            "20220114": "efccf2e0ecab3f7102bda98773ee598abdc05ac1eb9e788bfad9613b31eb922f"
+                        }
+                    }
+                }
+            },
+            "Super Basketball (jtbaskt)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20211231": "a1c1119e60d5b3b841144b8f7ddbd97d1be293491b142916bbbe0b4d20e5fac1",
+                            "20220114": "a3969a9b451e11d3df17cb935021d8fff7af94ec3e82582ab86a52493f35d973"
+                        }
+                    }
+                }
+            },
+            "Street Fighter (jtsf)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20201127": "13ca074472a7f72496920cece5d352d4fac49f27993db43548c39b0e359a8220",
+                            "20201204": "81687f36c446533a4d67d3ca18bf042258c5d779fe4e9fee9c637b4f8663f821",
+                            "20210115": "c04be9266f6a6422452deae8a0c9a95880078143b68242c2bf81ac63564c8f2e",
+                            "20210201": "3fa2ec7843bef6deea508095499365ef666981da3d1a0fe5117455926621aac8",
+                            "20210203": "c39ed91c8470272aba6041fab3805c76d5181df133c0a1212db38b13b96d6059",
+                            "20210213": "1e83b7bffc7535b040a5082f88fee8f921d27e214530b3c97533c601ff33c764",
+                            "20210314": "abb89982011e9863642b4e483434553fc7bbdf4be2b4d98f953fd02c63b4ec88",
+                            "20210519": "efab9304633ca20f8a0b5c40bb22c58f5a6d863a9242e9a7a4f88a796e99be68",
+                            "0_20210710": "b82d650b771dbfc60df98c99ec2d990ee4a32e716dff3845097305657e57e147",
+                            "0_20210618": "58adabefcdc664544a5927f27f23c08570331ab76c5c27f1ff5bd7eca27fee4b"
+                        }
+                    }
+                }
+            },
+            "System 16A (jts16)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210924": "8bb8ead6072f1e8c39793e33cb586d49faa834515f4a3c63a74cad920d3b98b2",
+                            "20211112": "e668cdc8cf8fb4d63d7fe325c75179a710ea631456f52f4fc452e7d8df89a576"
+                        }
+                    }
+                }
+            },
+            "System 16A (jts16a2)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210924": "128ae9a803e9cd612578b93b43e21078cec6c196052451e8aef3bb1b84b526de"
+                        }
+                    }
+                }
+            },
+            "System 16B (jts16b)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210924": "b14a71693109680eb5d6bbcdebef798d885b30ebee426466ec8fc6ca4bd4ac05",
+                            "20211112": "2f9f498aa90d1fbe78da0cdaf6d5bc0e14f52f8b691e6235e920e50e386e8a25",
+                            "20220128": "df57bf5121f28710dc01f81100e8a907732ab8a3b773ae4e77a4c08c35fd12f5"
+                        }
+                    }
+                }
+            },
+            "System 16B (jts16b1)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210924": "2a8e872b3d048145b03cfd429f50e92e543052eaf4dd00afb226f5ae2b5090ac",
+                            "20211112": "71450c9a0e1fe32c388a3f5ea3e1759f0b515df1ce6025322f26e8fc97e89020"
+                        }
+                    }
+                }
+            },
+            "System 16B (jts16b2)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210924": "74366016177d20d31fe39e5775870990b4612ece63f639ffe5fd5fca55361fbc",
+                            "20211112": "d076d6f7df6261a1d56337925cbb83110e9de38500de7aa5d46c7f80ade339a9"
+                        }
+                    }
+                }
+            },
+            "System 16B (jts16b3)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20210924": "2d707bb9083b615dccbff14abb0348e1a474105bf2c18b2785acf09fdfe7888e",
+                            "20211112": "71cc9df7b9dd1bb4e18f0c2d13eeb255e8ae0e0feedd9b8424307aa8d03cc564"
+                        }
+                    }
+                }
+            },
+            "Tiger Road (jttora)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200311": "96a990cb09645d5955c9b69807275fd6b397c72116b3c241cf8aa0a7a9a65983",
+                            "20200508": "5771b15e137d0951d63f1996d8a66b716f2edbe2a23db31c0edc76c58b5f58c7",
+                            "20200728": "6155af668c259dbc0640d2250ac73d258cfaedb7c5142caf5b4ecfc1162fb59a",
+                            "20201124": "a8af0d4331cd3b0ab9138cd4d87c1516a8e2559ba793e82192acf382e26363c4",
+                            "20201128": "0929438041ea15517aaeeb7a64edd26384219f8fba43a504017a671951cbbfa7",
+                            "20210115": "ed367674ba2e901d9b1499f3531a36a645dc147c688a0e7e8f820a2ab0fd8eed",
+                            "20210116": "cc1ff75da76822fa4bbcc56c4b130a279f650b8276b88affbbe9699790115b8a",
+                            "20210212": "a1c293df94cbb39a48c37786cff8c3c978755f295de903348d05ed218e669da8",
+                            "20210528": "f74d78e6b4dd4c158c62b9f835f30c5e6a6cc4b9cd4e1786ad5e46c2877889c5",
+                            "20210611": "d17f654226e5659438d34eb6b894d2422cc596eed1ca5e1806fbef3fe8c8dc4c",
+                            "20210618": "657901d0edb8e912a07fca10ec25256430135e12738ccdf6a48843016c069870",
+                            "20210710": "37a8a510786883b4da4f5e97717992029e6624ea62295ceb38b6751aef077fbc"
+                        }
+                    }
+                }
+            },
+            "Trojan (jttrojan)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20200806": "6ba9065f3756ec334034ced64b03fad3354a6c257b32e0676b6fdf35b6c1c5b0",
+                            "20200909": "028b137c472bd97d359068a5d45b89016f899551fda2928271f3489f44ed23b2",
+                            "20200914": "e9a15dca6eab3cb8866bb53ae9ed550fa3c5482ad108df3dc4a8952c5210c970",
+                            "20201124": "42d50f847d91b43634046049e3c310ce59a331f089f2144f431b38bfb8db088c",
+                            "20201128": "c8417f87d7d7e395c04d8310359c0637ddf876fde662689ccc5d021546cde16d",
+                            "20210115": "ef46d70f13ed5f3e5ce8ebaab1715e8db4b311d16b851374a65b1fab4a955071",
+                            "20210212": "45b04d8f6a63e08bb3c1fb0d1220631fcb0d31999668a01f9bb3db50b52ec1b8",
+                            "20210527": "16449b4ae5dd65bce06d3c222e7ca1f8d9d2d556cab95710ca6d2d43a13e2683",
+                            "20210611": "605dee5bb37417ffa8f6411e82328377885746d4447b683133056d8efc466f3e",
+                            "20210710": "9f05c0b27901943ee1670b9eb8c12a10cada3cbc107ae5573c634d75bdcf04cd"
+                        }
+                    }
+                }
+            },
+            "Vulgus (jtvulgus)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "0 (Unknown)": "550364f34cbe0e0ddde7b5c33f53ec081f5967fab19ccb87744d87addde01725",
+                            "20200311": "6fce85487417c176ad6d27b33e2555f300e533e8b289c062abc2c2ff0eed827b",
+                            "20200508": "9eb36e0189c1673c1327120d5ced8766cfaf272fbe3613cea9684d566044a70a",
+                            "20200728": "becc4259f5f075471e6d941f6e97009aaad6e25084e518e8f366db83f27ebd88",
+                            "20200909": "385b02b9b102307017055ae86be1c8daaa4d17e5b80f31c1107b5cecd79ccda4",
+                            "20200914": "be783b9ad1b62b55e045d432a140468092787f49396a19dcd4cd0321885592da",
+                            "20201124": "0abee76d8ed1c9f6e9763cfa9086de80a851d2efdb2aca46bf6aef81e8b67023",
+                            "20201125": "b557564abd1f680086c59c855457a04f57f57f73ae0407246b7aff374e1b85bb",
+                            "20201128": "fd1ee41b5a76cc6bd72b2cad04b3576b1fa25270a0394e66df409830031148ae",
+                            "20210115": "22169e32ba3f170a728bd3848821a4e2a2a3137c5f042be15db5d40d491303cf",
+                            "20210212": "ad884b6db1064b2949e7c0a1014d352e6a0db9cc55384803ff2ef4680a7909e8",
+                            "20210710": "32580f967f9521831ee8145345df050bcc2a2cc41266280aeadc899c16cb4d89"
+                        }
+                    }
+                }
+            },
+            "Yie Ar Kung-fu (jtkicker)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20211224": "64f9b8a3109d01c914de6ff773d99af848383dbf1692a9bd27c9a8939bc155ab"
+                        }
+                    }
+                }
+            },
+            "Yie Ar Kung-fu (jtyiear)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20211224": "ffaceb37be5e53455ca0a51f5a57e0bc8206c2ca01c1360cc19577863ff9f563",
+                            "20220114": "16908839b16063f5a3972f1dc84b7fde82b361b5041aab3f59bc37fadc007052"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
