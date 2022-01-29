@@ -19,3 +19,5 @@ Además de la propia experiencia, parte la información recogida en esta referen
 [http://www.forofpga.es/viewtopic.php?f=72&t=342]
 
 [http://joco.homeserver.hu/fpga/mist_zx48_en.html]
+
+[https://www.hiemalis.org/~keiji/PC/scancode-translate.pdf]
