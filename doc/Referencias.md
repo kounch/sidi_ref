@@ -2,22 +2,22 @@
 
 Además de la propia experiencia, parte la información recogida en esta referencia, ha sido obtenida de otras fuentes.
 
-[https://github.com/ManuFerHi/SiDi-FPGA/]
+[Repositorio oficial de SiDi en GitHub](https://github.com/ManuFerHi/SiDi-FPGA/)
 
-[https://github.com/mist-devel/mist-board/]
+[Repositorio oficial de MiST en GitHub](https://github.com/mist-devel/mist-board/)
 
-[https://github.com/mist-devel/mist-binaries/tree/master/cores]
+[Repositorio oficial de Cores de MiST en GitHub](https://github.com/mist-devel/mist-binaries/tree/master/cores)
 
-[https://en.wikipedia.org/wiki/%2BD]
+[+D](https://en.wikipedia.org/wiki/%2BD)
 
-[http://www.retrowiki.es/viewtopic.php?f=108&t=200035760]
+[Trucos de la MiST / Mistica FPGA16 / SiDi en RetroWiki](http://www.retrowiki.es/viewtopic.php?f=108&t=200035760)
 
-[http://www.retrowiki.es/viewtopic.php?f=108&t=200036167]
+[Distribución +3DOS para ZX-Uno - Imagen 1GB - (ver. 15.10.2020) en Mistisidi (RetroWiki)](http://www.retrowiki.es/viewtopic.php?f=108&t=200036167)
 
-[http://www.retrowiki.es/viewtopic.php?f=110&t=200037816]
+[Mar Océana - Distribución +3DOS para ZX-Uno - Imagen 1GB - (ver. 23.01.2022) en RetroWiki](http://www.retrowiki.es/viewtopic.php?f=110&t=200037816)
 
-[http://www.forofpga.es/viewtopic.php?f=72&t=342]
+[Cacharreos místicos. Parte VII: Virtualizando el ordenador ICE Felix HC 2000 con el core de Spectrum en ForoFPGA](http://www.forofpga.es/viewtopic.php?f=72&t=342)
 
-[http://joco.homeserver.hu/fpga/mist_zx48_en.html]
+[MiST ZX Spectrum 48K](http://joco.homeserver.hu/fpga/mist_zx48_en.html)
 
-[https://www.hiemalis.org/~keiji/PC/scancode-translate.pdf]
+[USB HID to PS/2 Scan Code Translation Table](https://www.hiemalis.org/~keiji/PC/scancode-translate.pdf)

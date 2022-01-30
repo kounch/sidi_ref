@@ -2,17 +2,17 @@
 
 ## Flash
 
-Como el firmware es compartido con otras placas, se puede obtener siempre la última versión en [https://github.com/mist-devel/mist-binaries/tree/master/firmware](el repositorio GitHub de MiST).
+Como el firmware es compartido con otras placas, se puede obtener siempre la última versión en [el repositorio GitHub de MiST](https://github.com/mist-devel/mist-binaries/tree/master/firmware).
 
 ### MacOS
 
-El programa [https://github.com/shumatech/BOSSA/releases](BOSSA) permite actualizar la Flash directamente desde macOS.
+El programa [BOSSA](https://github.com/shumatech/BOSSA/releases) permite actualizar la Flash directamente desde macOS.
 
 ### Windows (Virtual)
 
 También se puede hacer desde una máquina virtual de Windows que tenga acceso al puerto USB donde esté conectada la placa. Normalmente, las máquinas virtuales con Windows 7 funcionan sin problemas.
 
-Se debe descargar la versión de sam-ba 2.16 desde [https://www.microchip.com/en-us/development-tool/SAM-BA-In-system-Programmer](la web oficial), en [https://ww1.microchip.com/downloads/en/DeviceDoc/sam-ba_2.16_windows.exe](este enlace).
+Se debe descargar la versión de sam-ba 2.16 desde [la web oficial](https://www.microchip.com/en-us/development-tool/SAM-BA-In-system-Programmer), en [este enlace](https://ww1.microchip.com/downloads/en/DeviceDoc/sam-ba_2.16_windows.exe).
 
 ## Compilación del firmware
 
@@ -20,7 +20,7 @@ Primero es necesaroi instalar en macOS `mpc`. Lo mas sencillo suele ser utilizar
 
     brew install mpc
 
-Descargar el [https://raw.githubusercontent.com/mist-devel/mist-board/master/tools/install_arm-none-eabi-gcc.sh](script) modificado desde este mismo repositorio: [https://github.com/kounch/sidi_ref/raw/main/src/macOS_install_arm-none-eabi-gcc.sh](macOS_install_arm-none-eabi-gcc.sh)
+Descargar el [script](https://raw.githubusercontent.com/mist-devel/mist-board/master/tools/install_arm-none-eabi-gcc.sh) modificado desde este mismo repositorio: [macOS_install_arm-none-eabi-gcc.sh](https://github.com/kounch/sidi_ref/raw/main/src/macOS_install_arm-none-eabi-gcc.sh)
 
 Crear una imagen de disco, al menos de 2500MBytes de espacio y con soporte para mayúsculas y minúsculas (necesario para que funcionen bien las utilidades basadas en Linux)
 

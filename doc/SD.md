@@ -2,7 +2,7 @@
 
 ## Ocultar ficheros
 
-Útil cuando un Core (RBF) se invoca desde varios ficheros ARC
+Útil cuando un core (RBF) se invoca desde varios ficheros ARC
 
     chflags hidden /Volumes/SIDI_TEST/core.rbf
 
@@ -88,4 +88,4 @@ Y se pueden asignar (si el core se inicia desde `Tetris.arc`) poniendo esto en `
 
 ## Códigos de teclado
 
-[https://www.hiemalis.org/~keiji/PC/scancode-translate.pdf]
+"HID Usage ID" en [este documento](https://www.hiemalis.org/~keiji/PC/scancode-translate.pdf)
