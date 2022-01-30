@@ -1,6 +1,6 @@
 # Referencia para SiDi
 
-En este repositorio hay documentación y algunas utilidades para usar SiDi FPGA. Principalmente está orientado a macOS, aunque es posible que parte sea útil también en otros sistemas operativos.
+En este repositorio hay [documentación](./doc/Indice.md) y algunas [utilidades](./src/README.md) para usar la [FPGA SiDi](https://manuferhi.com/p/sidi). Principalmente está orientado a macOS, aunque es posible que parte sea útil también en otros sistemas operativos.
 
 [Documentación](./doc/Indice.md)
 

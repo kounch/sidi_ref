@@ -34,7 +34,7 @@ if sys.version_info.major == 3:
 
 __MY_VERSION__ = '0.0.1'
 
-MAIN_URL = 'https://raw.githubusercontent.com/kounch/zx123_tool/main'
+MAIN_URL = 'https://github.com/kounch/sidi_ref/raw/main/src'
 MY_DIRPATH = os.path.dirname(sys.argv[0])
 MY_DIRPATH = os.path.abspath(MY_DIRPATH)
 
