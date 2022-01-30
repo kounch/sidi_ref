@@ -8,29 +8,83 @@ Montar la imagen desde Terminal con
 
 ...y expulsarla al finalizar los cambios
 
+## ARC
+
+Los ficheros ARC son ficheros de texto que contienen información adicional que relaciona un fichero RBF de core con un fichero de ROM. Además puede tener información extra configuración del core. Son útiles cuando una única versión de un core se puede utilizar con distintos ficheros de ROM.
+
+### Estructura
+
+Se debe mantener el orden de estos elementos.
+
+Elemento | Obligatorio | Explicación
+--------|--------------|--------
+[ARC]   | Sí           | Cabecera
+RBF     | Sí           | Nombre en mayúsculas del fichero RBF sin extensión
+NAME    | Sí           | Nombre en mayúsculas del fichero .ROM a cargar, sin extensión
+MOD     | Sí           | Byte de configuración del core. Puede ser hexadecimal (`0x...`)
+DEFAULT | No           | Valor por defecto del estado del core
+DIR     | No           | Directorio por defecto donde abrir archivos. Si no se indica, se usará `NAME`
+CONF    | No           | Texto de configuración (si el cor tiene `"DIP;"` definido). Una entrada por línea
+
+El bit 0 del estado no se puede definir (se usa internamente para hacer reset).
+
+Los nombres de ficheros ROM y RBF deberían ser de menos de 8 letras.
+
+## MRA
+
+Los archivos MRA son ficheros XML de texto utilizados por la FPGA MiSTer para cargar directamente distintas versiones de ROM con un único core. Usando la versión de comandos de `mra` (en mra-tools), se pueden generar ficheros .ROM y .ARC para utilizar con SiDi.
+
+### Obtener la utilidad mra
+
+La versión para macOS se puede descargar [desde GitHub](https://github.com/kounch/mra-tools-c/tree/master/release/macos) o bien, compilar uno mismo, siguiendo estos pasos (se necesita tener instalado XCode o las herramientas de comandos de XCode):
+
+    git clone https://github.com/kounch/mra-tools-c.git
+    cd mra-tools-c
+    make
+
+### Uso de la utilidad
+
+Teniendo la utilidad `mra`, y, en un mismo directorio un fichero MRA, los ficheros ZIP necesarios (cuya versión y nombre se pueden averiguar inspeccionando las entradas `<setname>` y `<mameversion>`), se puede utilizar de esta manera para generar los ficheros .ROM y .ARC:
+
+    .../mra -A <...fichero.MRA> -O <directorio destino>
+
 ## Spectrum
 
-### Core ZX Spectrum 128K for MiSTer Board
+### Core ZX Spectrum
 
-Basado en [https://github.com/mist-devel/mist-binaries/tree/master/cores/spectrum]
+Basado en el core [ZX Spectrum 128K for MiST Board](https://github.com/mist-devel/mist-binaries/tree/master/cores/spectrum)
 
 #### Teclado
 
 `F1` - pausa/continuar (reproducción de cinta)
+
 `F2` - retroceder al trozo anterior (durante el tono piloto) o al comienzo de la parte actual (en otro caso) (reproducción de cinta)
+
 `F3` - Saltar a la siguiente parte (reproducción de cinta)
+
 `F4` - CPU a velocidad normal (3.5MHz)
+
 `F5` - CPU a 7MHz
+
 `F6` - CPU a 14MHz
+
 `F7` - CPU a 28MHz
+
 `F8` - CPU a 56MHz
+
 `F9` - Pausar/Continuar la CPU
+
 `F10` - Entrar al menú +D de snapshot (con IMG/MGT montado), y si no, menú de Multiface. Con esxdos activo, menú NMI de esxdos
+
 `Mayús Derecha+F10` - menú de Multiface 128 (o menú NMI de esxdos)
+
 `F11` - Reinicio en caliente
+
 `Alt+F11` - Reinicio en frío (como apagar y encender el Spectrum)
+
 `Ctrl+F11` - Reinicio en caliente con auto carga
-`F12` - Menú OSD del Core
+
+`F12` - Menú OSD del core
 
 #### Fichero ROM
 
@@ -49,6 +103,10 @@ El fichero `spectrum.rom` (229K) tiene esta estructura
 
 Se puede analizar y extraer su contenido con `ZX ROM Catalog`.
 
+Para crear un fichero ROM nuevo, se puede hacer desde línea de comandos, uniendo todos los ficheros necesarios en el orden correcto:
+
+    cat "esxdos ROM_0.8.8.ROM" "esxdos ROM_0.8.8.ROM" "TR-DOS ROM_5.04T.ROM" "32K Spectrum ROM_Pentagon 128.ROM" "64K Spectrum ROM_ZX Spectrum +2A EN.ROM" "G+DOS ROM_system 2a (MiST patched).ROM" "Multiface 128 ROM_87.2.ROM" "Multiface 3 ROM_3.C.ROM" "16K Spectrum ROM_ZX Spectrum.ROM" "General Sound ROM_1.05b.ROM" > "spectrum_orig.rom"
+
 #### Imagen VHD
 
 Se puede crear una imagen de disco RAW para que utilice el core (nombre por defecto `spectrum.vhd`)
@@ -57,58 +115,70 @@ Por ejemplo, siguiendo estos pasos, se puede tener una imagen de 2GB FAT16
 
 1. Crear arhivo vacío (2G)
 
-    dd if=/dev/zero of=spectrum.vhd bs=8m count=256
+        dd if=/dev/zero of=spectrum.vhd bs=8m count=256
 
 2. Crear particiones en el archivo
 
-    fdisk -e spectrum.vhd
-    fdisk: could not open MBR file /usr/standalone/i386/boot0: No such file or directory
-    The signature for this MBR is invalid.
-    Would you like to initialize the partition table? [y] y
-    Enter 'help' for information
-    fdisk:*1> erase
-    fdisk:*1> edit 1
-                Starting       Ending
-        #: id  cyl  hd sec -  cyl  hd sec [     start -       size]
-    ------------------------------------------------------------------------
-        1: 00    0   0   0 -    0   0   0 [         0 -          0] unused      
-    Partition id ('0' to disable)  [0 - FF]: [0] (? for help) 6
-    Do you wish to edit in CHS mode? [n]
-    Partition offset [0 - 4194304]: [63] 128
-    Partition size [1 - 4194176]: [4194176]
-    fdisk:*1> flag 1
-    Partition 1 marked active.
-    fdisk:*1> w
-    Writing MBR at offset 0.
-    fdisk: 1> exit
+        fdisk -e spectrum.vhd
+        fdisk: could not open MBR file /usr/standalone/i386/boot0: No such file or directory
+        The signature for this MBR is invalid.
+        Would you like to initialize the partition table? [y] y
+        Enter 'help' for information
+        fdisk:*1> erase
+        fdisk:*1> edit 1
+                    Starting       Ending
+            #: id  cyl  hd sec -  cyl  hd sec [     start -       size]
+        ------------------------------------------------------------------------
+            1: 00    0   0   0 -    0   0   0 [         0 -          0] unused      
+        Partition id ('0' to disable)  [0 - FF]: [0] (? for help) 6
+        Do you wish to edit in CHS mode? [n]
+        Partition offset [0 - 4194304]: [63] 128
+        Partition size [1 - 4194176]: [4194176]
+        fdisk:*1> flag 1
+        Partition 1 marked active.
+        fdisk:*1> w
+        Writing MBR at offset 0.
+        fdisk: 1> exit
 
 3. Formatear partición
 
-    hdiutil attach -imagekey diskimage-class=CRawDiskImage -nomount spectrum.vhd
-    newfs_msdos -F 16 -v SPECTRUM -c 128 /dev/disk7s1
-    hdiutil detach /dev/disk7
+        hdiutil attach -imagekey diskimage-class=CRawDiskImage -nomount spectrum.vhd
+        newfs_msdos -F 16 -v SPECTRUM -c 128 /dev/disk7s1
+        hdiutil detach /dev/disk7
 
-Montar imagen y copiar ficheros
+4. Montar imagen y copiar ficheros
 
-    hdiutil attach -imagekey diskimage-class=CRawDiskImage spectrum.vhd
+        hdiutil attach -imagekey diskimage-class=CRawDiskImage spectrum.vhd
 
 ### Core Speccy
 
-Basado en [https://github.com/sorgelig/ZX_Spectrum-128K_MIST/tree/bb24714d1e340ed57c69c173354021b39495a88a] (ZX_Spectrum-128K_MIST de 2016-06-12)
+Basado en el core [ZX_Spectrum-128K_MIST de 2016-06-12](https://github.com/sorgelig/ZX_Spectrum-128K_MIST/tree/bb24714d1e340ed57c69c173354021b39495a88a)
 
 #### Atajos de Teclado
 
 `F1` - pausa/continuar (reproducción de cinta)
+
 `F2` - retroceder al trozo anterior (durante el tono piloto) o al comienzo de la parte actual (en otro caso) (reproducción de cinta)
+
 `F3` - Saltar a la siguiente parte (reproducción de cinta)
+
 `F4` - CPU a velocidad normal (3.5MHz)
+
 `F5` - CPU a 7MHz
+
 `F6` - CPU a 14MHz
+
 `F7` - CPU a 28MHz
+
 `F8` - CPU a 56MHz
+
 `F11` - Inicializa esxdos. Posteriormente, llamada NMI de esxdos
+
 `Ctrl+F11` - Reinicio en caliente
+
 `Alt+F11` - Reinicio en frío (como apagar y encender el Spectrum)
+
+`F12` - Menú OSD del core
 
 #### Configuraciones
 
@@ -124,6 +194,24 @@ El fichero `speccy.rom` (74K) tiene esta estructura
     TR-DOS ROM (16K)
     Pentagon 128 ROM (32K)
     esxdos (8K)
+
+Se puede analizar y extraer su contenido con `ZX ROM Catalog`.
+
+Para crear un fichero ROM nuevo, se puede hacer desde línea de comandos, uniendo todos los ficheros necesarios en el orden correcto:
+
+    cat "Retroleum Diagnostic ROM_1.24.ROM" "TR-DOS ROM_5.04T.ROM" "32K Spectrum ROM_Pentagon 128.ROM" "esxdos ROM_0.8.5.ROM" > speccy.rom"
+
+### Core ZX Spectrum 48K de Jozsef Laszlo
+
+Basado en el core [MiST ZX Spectrum 48K](http://joco.homeserver.hu/fpga/mist_zx48_en.html)
+
+#### Uso del Teclado
+
+`F12` - Menú OSD del core
+
+#### Fichero de ROM
+
+El fichero `zx48.rom` (16K) contiene la ROM del Spectrum y se puede analizar con `ZX ROM Catalog`.
 
 ### Sintetizar Cores
 
