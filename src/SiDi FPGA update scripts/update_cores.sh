@@ -18,18 +18,21 @@ main () {
   BASEDIR="${MYPATH}/_temp"
   SRCDIR="${BASEDIR}/git/SiDi-FPGA/Cores"
 
-  # clone git repo if it doesn't exist
+  echo "Getting repository updates.."
+
+  # Clone git repo if it doesn't exist
   if [[ ! -d "${SRCDIR}" ]]; then
-    mkdir -p ${BASEDIR}/git
-    (cd ${BASEDIR}/git; git clone https://github.com/ManuFerHi/SiDi-FPGA.git)
-    #Set timestamps on git files to match repository commit dates
-    (cd "${SRCDIR}"; git ls-files | sed "s/'/\\\'/g" | xargs -I{} bash -c 'touch "{}" --date=@$(git log -n1 --pretty=format:%ct -- "{}")')
+    mkdir -p "${BASEDIR}/git"
+    (cd "${BASEDIR}/git"; git clone https://github.com/ManuFerHi/SiDi-FPGA.git)
   fi
 
-  # Update the cores from github
+  # Update the repository from github
   (cd "${SRCDIR}"; git pull > /dev/null)
 
-  #Check for firmware updates
+  #Set timestamps on git files to match repository commit dates
+  (cd "${SRCDIR}"; git ls-files | sed "s/'/\\\'/g" | xargs -I{} bash -c 'touch -t $(git log -n1 --pretty=format:%cd --date=format:%Y%m%d%H%M.%S -- "{}") "{}"')
+
+  echo "Checking for firmware updates..."
   cd "${MYPATH}"
   SRC=`ls -Lt "${SRCDIR}/../Firmware"/*.upg 2>/dev/null | head -1`
   DST=_firmware/`basename "${SRC}"`
@@ -43,22 +46,25 @@ main () {
     echo 
   fi
 
+  echo "Checking computer cores updates..."
   if [[ -d "${MYPATH}/Computer" ]]; then
     update_dir "${MYPATH}/Computer" "${BASEDIR}/git/SiDi-FPGA/cores/Computer"
   fi
 
+  echo "Checking console cores updates..."
   if [[ -d "${MYPATH}/Console" ]]; then
     update_dir "${MYPATH}/Console" "${BASEDIR}/git/SiDi-FPGA/cores/Console"
   fi
 
-  cd "${MYPATH}"
+  echo "Finished"
 }
 
+# Update the contents of a dir, using as reference the git information
 update_dir () {
   CURRENTDIR=$1
   DIRTOCHECK=$2
 
-  #Check all the cores in git with current matching directories 
+  # Check all the cores in git with current matching directories 
   cd "${CURRENTDIR}"
   find . -maxdepth 1 -type d -not -path '*/_temp*' -print0  | while read -d $'\0' FILE
   do
@@ -74,8 +80,10 @@ update_dir () {
       fi
     done
 
+    # Find SiDi .rbf files
     SRC=`ls -Lt "${DIRTOCHECK}/${DIR}"/*.rbf 2>/dev/null | grep -i "_SiDi" | head -1`
     if [[ -z $SRC ]]; then
+      # Find any .rbf file
       SRC=`ls -Lt "${DIRTOCHECK}/${DIR}"/*.rbf 2>/dev/null | head -1`
     fi
 
@@ -87,7 +95,7 @@ update_dir () {
     cd "${CURRENTDIR}"
     copy_changed "$SRC" "${DST}"
 
-    # Copy special ROMS
+    # Copy special ROMS if changed
     cd "${DIRTOCHECK}/${DIR}"
     DIR_ROMS=("Atari800" "BBC" "C16" "Next186" "QL" "Sam Coupe" "Speccy" "VIC20" "ZX Spectrum")
     for i in "${!DIR_ROMS[@]}"; do
