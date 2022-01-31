@@ -8,8 +8,9 @@
 # Original version for MiST obtained from
 #       https://gist.github.com/squidrpi/4ce3ea61cbbfa3900e116f9565d45e74
 
-MYPATH=`dirname "$0" | xargs realpath`
-LOGFILE=update_cores.log
+MYPATH=`realpath "$0"`
+MYPATH=`dirname "${MYPATH}"`
+LOGFILE="${MYPATH}/update_cores.log"
 
 date >"${LOGFILE}"
 echo >>"${LOGFILE}"
@@ -100,7 +101,7 @@ update_dir () {
     DIR_ROMS=("Atari800" "BBC" "C16" "Next186" "QL" "Sam Coupe" "Speccy" "VIC20" "ZX Spectrum")
     for i in "${!DIR_ROMS[@]}"; do
       if [[ "${DIR}" = "${DIR_ROMS[i]}" ]];then
-        find . -maxdepth 1 -type f -type f -iname '*.ROM' -print0  | while read -d $'\0' ROM_FILE
+        find . -maxdepth 1 -type f -iname '*.ROM' -print0  | while read -d $'\0' ROM_FILE
         do
           cd "${CURRENTDIR}"
           copy_changed "${DIRTOCHECK}/${DIR}/${ROM_FILE:2}" "${DIR}/${ROM_FILE:2}"

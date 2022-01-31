@@ -132,6 +132,12 @@ El archivo `zxrom_catalog.json` es un objeto donde los nombres principales indic
 
 Script que permite instalar lo necesario en macOS para [compilar el firmware](../doc/Firmware.md#Compilación-del-firmware) de la placa.
 
+## SiDi FPGA update scripts
+
+Conjunto de scripts que permiten obtener las versiones más recientes de cores del repositorio oficial.
+
+[Ver aquí para más detalles](<./Sidi FPGA update scripts/>)
+
 ## License
 
 BSD 2-Clause License
