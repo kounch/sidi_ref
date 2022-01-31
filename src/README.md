@@ -1,5 +1,11 @@
 # Utilidades para SiDi
 
+## SiDi FPGA update scripts
+
+Conjunto de scripts que permiten obtener las versiones más recientes de cores del repositorio oficial.
+
+[Ver aquí para más detalles](./Sidi%20FPGA%20update%20scripts/)
+
 ## RBF Catalog
 
 Permite identificar ficheros RBF de cores de SiDi.
@@ -131,12 +137,6 @@ El archivo `zxrom_catalog.json` es un objeto donde los nombres principales indic
 ## macOS_install_arm-none-eabi-gcc.sh
 
 Script que permite instalar lo necesario en macOS para [compilar el firmware](../doc/Firmware.md#Compilación-del-firmware) de la placa.
-
-## SiDi FPGA update scripts
-
-Conjunto de scripts que permiten obtener las versiones más recientes de cores del repositorio oficial.
-
-[Ver aquí para más detalles](<./Sidi FPGA update scripts/>)
 
 ## License
 
