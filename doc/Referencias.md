@@ -21,3 +21,5 @@ Además de la propia experiencia, parte la información recogida en esta referen
 [MiST ZX Spectrum 48K](http://joco.homeserver.hu/fpga/mist_zx48_en.html)
 
 [USB HID to PS/2 Scan Code Translation Table](https://www.hiemalis.org/~keiji/PC/scancode-translate.pdf)
+
+[MIST FPGA update scripts](https://gist.github.com/squidrpi/4ce3ea61cbbfa3900e116f9565d45e74)

@@ -1,0 +1,5 @@
+_firmware/*
+_temp/*
+Computer/*
+Console/*
+*.log
