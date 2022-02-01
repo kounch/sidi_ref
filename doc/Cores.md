@@ -1,34 +1,34 @@
 # Cores
 
-## Modificar el contenido de una imagen de disco VHD
-
-Montar la imagen desde Terminal con
-
-    hdiutil attach -imagekey diskimage-class=CRawDiskImage /path_to_your_vhd
-
-...y expulsarla al finalizar los cambios
-
 ## ARC
 
-Los ficheros ARC son ficheros de texto que contienen información adicional que relaciona un fichero RBF de core con un fichero de ROM. Además puede tener información extra configuración del core. Son útiles cuando una única versión de un core se puede utilizar con distintos ficheros de ROM.
+Los archivos ARC son ficheros de texto que contienen información adicional que relaciona un fichero RBF de core con un fichero de ROM. Además puede tener información extra de configuración del core. Son útiles cuando una única versión de un core se puede utilizar con distintos ficheros de ROM.
 
 ### Estructura
 
 Se debe mantener el orden de estos elementos.
 
 Elemento | Obligatorio | Explicación
---------|--------------|--------
-[ARC]   | Sí           | Cabecera
-RBF     | Sí           | Nombre en mayúsculas del fichero RBF sin extensión
-NAME    | Sí           | Nombre en mayúsculas del fichero .ROM a cargar, sin extensión
-MOD     | Sí           | Byte de configuración del core. Puede ser hexadecimal (`0x...`)
-DEFAULT | No           | Valor por defecto del estado del core
-DIR     | No           | Directorio por defecto donde abrir archivos. Si no se indica, se usará `NAME`
-CONF    | No           | Texto de configuración (si el cor tiene `"DIP;"` definido). Una entrada por línea
+---------|--------------|--------
+[ARC]    | Sí           | Cabecera
+RBF      | Sí           | Nombre en mayúsculas del fichero RBF sin extensión
+NAME     | Sí           | Nombre en mayúsculas del fichero .ROM a cargar, sin extensión
+MOD      | Sí           | Byte de configuración del core. Puede ser hexadecimal (`0x...`)
+DEFAULT  | No           | Valor por defecto del estado del core
+DIR      | No           | Directorio por defecto donde abrir archivos. Si no se indica, se usará `NAME`
+CONF     | No           | Texto de configuración (si el core tiene `"DIP;"` definido). Una entrada por línea
 
 El bit 0 del estado no se puede definir (se usa internamente para hacer reset).
 
 Los nombres de ficheros ROM y RBF deberían ser de menos de 8 letras.
+
+Por ejemplo, para ejecutar el Core de Spectrum (`spectrum.rbf`) con un conjunto de ROMs diferentes (`misroms.rom`), y con el directorio por defecto `Speccy`, se puede crear un fichero llamado `Mi ZX Spectrum.arc` con este contenido:
+
+    [ARC]
+    RBF=SPECTRUM
+    NAME=MISROMS
+    MOD=0
+    DIR=SPECCY
 
 ## MRA
 
@@ -36,7 +36,7 @@ Los archivos MRA son ficheros XML de texto utilizados por la FPGA MiSTer para ca
 
 ### Obtener la utilidad mra
 
-La versión para macOS se puede descargar [desde GitHub](https://github.com/kounch/mra-tools-c/tree/master/release/macos) o bien, compilar uno mismo, siguiendo estos pasos (se necesita tener instalado XCode o las herramientas de comandos de XCode):
+La versión para macOS se puede descargar [desde GitHub](https://github.com/kounch/mra-tools-c/tree/master/release/macos) o bien, compilarla uno mismo, siguiendo estos pasos (se necesita tener instalado XCode o las herramientas de comandos de XCode):
 
     git clone https://github.com/kounch/mra-tools-c.git
     cd mra-tools-c
@@ -47,6 +47,14 @@ La versión para macOS se puede descargar [desde GitHub](https://github.com/koun
 Teniendo la utilidad `mra`, y, en un mismo directorio un fichero MRA, los ficheros ZIP necesarios (cuya versión y nombre se pueden averiguar inspeccionando las entradas `<setname>` y `<mameversion>`), se puede utilizar de esta manera para generar los ficheros .ROM y .ARC:
 
     .../mra -A <...fichero.MRA> -O <directorio destino>
+
+## Modificar el contenido de una imagen de disco VHD
+
+Montar la imagen desde Terminal con
+
+    hdiutil attach -imagekey diskimage-class=CRawDiskImage /path_to_your_vhd
+
+...y expulsarla al finalizar los cambios
 
 ## Spectrum
 
@@ -105,11 +113,11 @@ Se puede analizar y extraer su contenido con `ZX ROM Catalog`.
 
 Para crear un fichero ROM nuevo, se puede hacer desde línea de comandos, uniendo todos los ficheros necesarios en el orden correcto:
 
-    cat "esxdos ROM_0.8.8.ROM" "esxdos ROM_0.8.8.ROM" "TR-DOS ROM_5.04T.ROM" "32K Spectrum ROM_Pentagon 128.ROM" "64K Spectrum ROM_ZX Spectrum +2A EN.ROM" "G+DOS ROM_system 2a (MiST patched).ROM" "Multiface 128 ROM_87.2.ROM" "Multiface 3 ROM_3.C.ROM" "16K Spectrum ROM_ZX Spectrum.ROM" "General Sound ROM_1.05b.ROM" > "spectrum_orig.rom"
+    cat "esxdos ROM_0.8.8.ROM" "esxdos ROM_0.8.8.ROM" "TR-DOS ROM_5.04T.ROM" "32K Spectrum ROM_Pentagon 128.ROM" "64K Spectrum ROM_ZX Spectrum +2A EN.ROM" "G+DOS ROM_system 2a (MiST patched).ROM" "Multiface 128 ROM_87.2.ROM" "Multiface 3 ROM_3.C.ROM" "16K Spectrum ROM_ZX Spectrum.ROM" "General Sound ROM_1.05b.ROM" > "spectrum.rom"
 
 #### Imagen VHD
 
-Se puede crear una imagen de disco RAW para que utilice el core (nombre por defecto `spectrum.vhd`)
+Se puede crear una imagen de disco RAW para que utilice el core con esxdos (nombre por defecto `spectrum.vhd`)
 
 Por ejemplo, siguiendo estos pasos, se puede tener una imagen de 2GB FAT16
 
@@ -140,13 +148,16 @@ Por ejemplo, siguiendo estos pasos, se puede tener una imagen de 2GB FAT16
         Writing MBR at offset 0.
         fdisk: 1> exit
 
-3. Formatear partición
+3. Preparar el nuevo disco:
 
         hdiutil attach -imagekey diskimage-class=CRawDiskImage -nomount spectrum.vhd
+
+4. Tomar nota de cuál es el nuevo dispositivo (en este ejemplo `/dev/disk7s1`) y formatear en FAT16:
+
         newfs_msdos -F 16 -v SPECTRUM -c 128 /dev/disk7s1
         hdiutil detach /dev/disk7
 
-4. Montar imagen y copiar ficheros
+5. Montar imagen para poder copiar los ficheros que se quiera:
 
         hdiutil attach -imagekey diskimage-class=CRawDiskImage spectrum.vhd
 
@@ -215,6 +226,6 @@ El fichero `zx48.rom` (16K) contiene la ROM del Spectrum y se puede analizar con
 
 ### Sintetizar Cores
 
-Es posible instalar Quartus Lite (buscar el instalador QuartusLiteSetup-17.1.0.590-windows.exe), con Wineskin.
+Es posible instalar Quartus Lite (buscar el [instalador QuartusLiteSetup-17.1.0.590-windows.exe](https://fpgasoftware.intel.com/17.1/?edition=lite&platform=windows&download_manager=dlm3)), con [Wineskin](https://github.com/Gcenx/WineskinServer).
 
-Usando `WineCX64Bit21.1.0` e invocando al instalador desde la Shell de Wine, se tiene una versión funcional para sintetizar cores sencillos.
+Usando `WineCX64Bit21.1.0` e invocando al instalador desde la Shell de Wine, se obtiene una versión funcional para, al menos, sintetizar cores sencillos.

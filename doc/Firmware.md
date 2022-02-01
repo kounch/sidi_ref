@@ -16,7 +16,7 @@ Se debe descargar la versión de sam-ba 2.16 desde [la web oficial](https://www.
 
 ## Compilación del firmware
 
-Primero es necesaroi instalar en macOS `mpc`. Lo mas sencillo suele ser utilizar Homebrew:
+Primero es necesario instalar en macOS `mpc`. Lo mas sencillo suele ser utilizar [Homebrew](https://brew.sh):
 
     brew install mpc
 
