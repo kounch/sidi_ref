@@ -1,11 +1,5 @@
 # Configuración de la tarjeta SD
 
-## Ocultar ficheros
-
-Útil cuando un core (RBF) se invoca desde varios ficheros ARC
-
-    chflags hidden /Volumes/SIDI_TEST/core.rbf
-
 ## Fichero mist.ini
 
 [Documentación oficial](https://github.com/mist-devel/mist-board/wiki/DocIni) (en inglés)
@@ -86,6 +80,173 @@ Y se pueden asignar (si el core se inicia desde `Tetris.arc`) poniendo esto en `
     joy_key_map=800,3B
     joy_key_map=C00,29
 
+## Ocultar ficheros de core
+
+Útil cuando un core (RBF) se invoca desde varios [ficheros ARC](./Cores.md#ARC), y sólo se quieren ver estos últimos. Por ejemplo:
+
+    chflags hidden /Volumes/SiDi/Arcade/JOTEGO-CPS1/jtcps1.rbf
+
+Para volver a hacer visible el fichero:
+
+    chflags nohidden /Volumes/SiDi/Arcade/JOTEGO-CPS1/jtcps1.rbf
+
+## Incluir cores en subdirectorios
+
+Este procedimiento sólo es válido para discos formateados con FAT16 o FAT32. Para unidades con formato exFat, se ha de usar otro sistema operativo que no sea macOS.
+
+Primero se han de instalar [mtools](https://www.gnu.org/software/mtools/), por ejemplo, usando [Homebrew](https://brew.sh):
+
+    brew install mtools
+
+Averiguar el dispositivo asociado a la tarjeta SD
+
+    diskutil list
+
+Editar .mtoolsrc (en este ejemplo, el dispositivo encontrado es `/dev/disk6s1`)
+
+    drive s: file="/dev/disk6s1"
+    mtools_skip_check=1 
+
+Desmontar la unidad
+
+    diskutil unmount /dev/disk6s1
+
+Ejecutar, con permisos elevados, el comando `mattrib` para añadir permisos a todos los directorios donde haya archivos RBF de core (incluyendo los directorios superiores, si los hubiera).
+
+Por ejemplo, para los directorios `Computer` y `Console` en la raíz de la tarjeta:
+
+    sudo mattrib +s s:/Computer
+    sudo mattrib +s s:/Console
+
+Finalmente, expulsar la SD completa para usarla:
+
+    diskutil unmountDisk /dev/disk6
+
 ## Códigos de teclado
 
-"HID Usage ID" en [este documento](https://www.hiemalis.org/~keiji/PC/scancode-translate.pdf)
+"HID Usage ID" obtenido desde [este documento](https://www.hiemalis.org/~keiji/PC/scancode-translate.pdf).
+
+Key Name           |HID Usage ID
+-------------------|------------
+System Power       |81
+System Sleep       |82
+System Wake        |83
+No Event           |00
+Overrun Error      |01
+POST Fail          |02
+ErrorUndefined     |03
+aA                 |04
+bB                 |05
+cC                 |06
+dD                 |07
+eE                 |08
+fF                 |09
+gG                 |0A
+hH                 |0B
+iI                 |0C
+jJ                 |0D
+kK                 |0E
+lL                 |0F
+mM                 |10
+nN                 |11
+oO                 |12
+pP                 |13
+qQ                 |14
+rR                 |15
+sS                 |16
+tT                 |17
+uU                 |18
+vV                 |19
+wW                 |1A
+xX                 |1B
+yY                 |1C
+zZ                 |1D
+1!                 |1E
+2@                 |1F
+3#                 |20
+4$                 |21
+5%                 |22
+6^                 |23
+7&                 |24
+8*                 |25
+9(                 |26
+0\)                |27
+Return             |28
+Escape             |29
+Backspace          |2A
+Tab                |2B
+Space              |2C
+-_                 |2D
+=+                 |2E
+[{                 |2F
+]}                 |30
+\|                 |31
+Europe 1**         |32
+;:                 |33
+'"                 |34
+`~                 |35
+,<                 |36
+.>                 |37
+/?                 |38
+Caps Lock          |39
+F1                 |3A
+F2                 |3B
+F3                 |3C
+F4                 |3D
+F5                 |3E
+F6                 |3F
+F7                 |40
+F8                 |41
+F9                 |42
+F10                |43
+F11                |44
+F12                |45
+Print Screen       |46
+Scroll Lock        |47
+Break (Ctrl-Pause) |48
+Pause              |48
+Insert             |49
+Home               |4A
+Page Up            |4B
+Delete             |4C
+End                |4D
+Page Down          |4E
+Right Arrow        |4F
+Left Arrow         |50
+Down Arrow         |51
+Up Arrow           |52
+Num Lock           |53
+Keypad /           |54
+Keypad *           |55
+Keypad -           |56
+Keypad +           |57
+Keypad Enter       |58
+Keypad 1 End       |59
+Keypad 2 Down      |5A
+Keypad 3 PageDn    |5B
+Keypad 4 Left      |5C
+Keypad 5           |5D
+Keypad 6 Right     |5E
+Keypad 7 Home      |5F
+Keypad 8 Up        |60
+Keypad 9 PageUp    |61
+Keypad 0 Insert    |62
+Keypad . Delete    |63
+Europe 2**         |64
+App                |65
+Keyboard Power     |66
+Keypad =           |67
+F13                |68
+F14                |69
+F15                |6A
+F16                |6B
+F17                |6C
+F18                |6D
+F19                |6E
+F20                |6F
+F21                |70
+F22                |71
+F23                |72
+F24                |73
+
+Nota **: Estas teclas pueden variar según el idioma de fabricación del teclado. Europe 1 suele estar en la posición 42 (AT-101), al lado de la tecla Enter. Europe 2 suele estar en la posición 42 (AT-101), Entre la tecla de mayúsculas y la Z.
