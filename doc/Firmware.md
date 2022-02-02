@@ -4,7 +4,7 @@
 
 Como el firmware es compartido con otras placas, se puede obtener siempre la última versión en [el repositorio GitHub de MiST](https://github.com/mist-devel/mist-binaries/tree/master/firmware).
 
-### MacOS
+### macOS
 
 El programa [BOSSA](https://github.com/shumatech/BOSSA/releases) permite actualizar la Flash directamente desde macOS.
 

@@ -1,5 +1,6 @@
 _firmware/*
 _temp/*
+Arcade/*
 Computer/*
 Console/*
 *.log

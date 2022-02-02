@@ -24,6 +24,9 @@ main () {
   rm -rf "${SDDIR}" 2>/dev/null
   mkdir -p "${SDDIR}"
 
+  echo "Firmware..."
+  cp -p "${MYPATH}/_firmware/"*.upg "${SDDIR}/firmware.upg"
+
   DIR_CORES=("Computer" "Console")
   for i in "${!DIR_CORES[@]}"; do
     echo "${DIR_CORES[i]} cores..."
@@ -39,6 +42,12 @@ main () {
 
   echo
   echo "Synchronizing (rsync) to SD..."
+  # Arcade
+  rsync -utr --modify-window=1 --exclude='*.ini' \
+             --exclude='.Trashes' --exclude='.fseventsd' --exclude='.DS_Store' \
+             --exclude='.Spotlight-V100' --exclude='System Volume Information' \
+              "${MYPATH}/Arcade" "${DESTVOL}"
+  # Other
   rsync -utr --modify-window=1 --exclude='*.ini' --exclude='*.CFG' \
              --exclude='*.RAM' --exclude='*.sav' --exclude='QXL.WIN' \
              --exclude='.Trashes' --exclude='.fseventsd' --exclude='.DS_Store' \

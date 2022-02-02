@@ -20,13 +20,11 @@ main () {
   SRCDIR="${BASEDIR}/git/SiDi-FPGA/Cores"
 
   echo "Getting repository updates.."
-
   # Clone git repo if it doesn't exist
   if [[ ! -d "${SRCDIR}" ]]; then
     mkdir -p "${BASEDIR}/git"
     (cd "${BASEDIR}/git"; git clone https://github.com/ManuFerHi/SiDi-FPGA.git)
   fi
-
   # Update the repository from github
   (cd "${SRCDIR}"; git pull > /dev/null)
 
