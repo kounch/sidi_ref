@@ -40,7 +40,7 @@ main () {
   if [[ ! -f "${DST}" ]]; then
     cp -p "${SRC}" "${DST}"
     echo ==================
-    echo FIRMWARE UPDATED!!! $DST | tee -a "${LOGFILE}"
+    echo FIRMWARE UPDATED!!! "${DST}" | tee -a "${LOGFILE}"
     echo ==================
     echo 
   fi
@@ -81,18 +81,18 @@ update_dir () {
 
     # Find SiDi .rbf files
     SRC=`ls -Lt "${DIRTOCHECK}/${DIR}"/*.rbf 2>/dev/null | grep -i "_SiDi" | head -1`
-    if [[ -z $SRC ]]; then
+    if [[ -z "${SRC}" ]]; then
       # Find any .rbf file
       SRC=`ls -Lt "${DIRTOCHECK}/${DIR}"/*.rbf 2>/dev/null | head -1`
     fi
 
-    if [[ -z "$SRC" || -z "${DST}" ]]; then
+    if [[ -z "${SRC}" || -z "${DST}" ]]; then
       continue
     fi 
 
     # Copy core file if changed
     cd "${CURRENTDIR}"
-    copy_changed "$SRC" "${DST}"
+    copy_changed "${SRC}" "${DST}"
 
     # Copy special ROMS if changed
     cd "${DIRTOCHECK}/${DIR}"
@@ -117,7 +117,7 @@ copy_changed () {
 
   if [[ -f "${SRC}" && ! -f "${DST}" ]]; then
     cp -p "${SRC}" "${DST}"
-    echo Update $DST | tee -a "${LOGFILE}"
+    echo Update "${DST}" | tee -a "${LOGFILE}"
   else
     if [[ "${SRC}" -nt "${DST}" ]]; then
       cp -p "${SRC}" "${DST}"
@@ -127,9 +127,9 @@ copy_changed () {
       MD5SRC=`md5sum "${SRC}" | awk '{print $1}'`
       MD5DST=`md5sum "${DST}" | awk '{print $1}'`
   
-      if [[ $MD5SRC != $MD5DST ]]; then
-        cp -p "$SRC" "${DST}"
-        echo Update $DST | tee -a "${LOGFILE}"
+      if [[ "${MD5SRC}" != "${MD5DST}" ]]; then
+        cp -p "${SRC}" "${DST}"
+        echo Update "${DST}" | tee -a "${LOGFILE}"
       fi
     fi
   fi

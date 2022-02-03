@@ -34,51 +34,63 @@ main () {
 
   #Set timestamps on git files to match repository commit dates
   (cd "${SRCDIR}"; git ls-files | sed "s/'/\\\'/g" | xargs -I{} bash -c 'touch -t $(git log -n1 --pretty=format:%cd --date=format:%Y%m%d%H%M.%S -- "{}") "{}" 2>/dev/null')
+  rm "${SRCDIR}/{}" 2>/dev/null
 
   echo "Updating MRA..."
-  find "${SRCDIR}/mra" -type f -name '*.mra' -newer "${FLAGFILE}" -print0  | while read -d $'\0' MRAFILE
+  find "${SRCDIR}/mra" -type f -iname '*.mra' -newer "${FLAGFILE}" -print0  | while read -d $'\0' MRAFILE
   do
     # Exclude what I'm not interested in
     [[ "${MRAFILE}" == *_alternatives* ]] && continue
 
-    MRARBF=$(grep rbf "${MRAFILE}")
-    set_destdir "${MRARBF}"
-  
+    # Process RBF names
+    RBF=$("${MRABIN}" -l "${MRAFILE}" | grep 'rbf name:' | sed 's/rbf name: //')
+    # Fix wrong named RBFs
+    RBF=$(echo "${RBF}" | sed 's/jtcommando/jtcom/')
+    RBF=$(echo "${RBF}" | sed 's/jtgunsmoke/jtgun/')
+    RBF=$(echo "${RBF}" | sed 's/jtsectionz/jtsz/')
+    RBF=$(echo "${RBF}" | sed 's/jtf1dream/jtf1drm/')
+    # Fix unorthodox RBF names 
+    RBFORIG=$(echo "${RBF}" | sed 's/jtsf.rbf/jtsf_20210519.rbf/')
+
+    set_destdir "${RBF}"
     mkdir -p "${DESTDIR}"
+  
+    # Copy RBF if needed
+    if [[ ! -f "${SRCDIR}/sidi/${RBFORIG}.rbf" ]]; then
+      echo "RBF ${RBF} is missing for MRA `basename "${MRAFILE}"`, probably BETA"
+    else
+      copy_changed "${SRCDIR}/sidi/${RBFORIG}.rbf" "${DESTDIR}/${RBF}.rbf"
+    fi
 
     # Check if ROM exists
     ZIPFILE=$("${MRABIN}" -l "${MRAFILE}" | grep 'zip\[0\]' | head -1 | awk '{print $2}')
     echo "${ZIPFILE}"
     if [[ ! -f "${ZIPDIR}/${ZIPFILE}" ]]; then
       echo Downloading ROM ${ZIPFILE}...
-      #cp "/Volumes/MAME 0232/${ZIPFILE}" "${ZIPDIR}/"
-      #(cd "${ZIPDIR}";  curl -sOL https://archive.org/download/MAME223RomsOnlyMerged/${ZIPFILE})
       (cd "${ZIPDIR}";  curl -sOL https://archive.org/download/mame-merged/mame-merged/${ZIPFILE})
+      #cp "/Volumes/MAME 0232/${ZIPFILE}" "${ZIPDIR}/"
+      #(cd "${ZIPDIR}";  curl -sOL https://archive.org/download/mame-merged/mame-merged/${ZIPFILE})
+      #(cd "${ZIPDIR}";  curl -sOL https://archive.org/download/hbmame0224roms/${ZIPFILE})
+      #(cd "${ZIPDIR}";  curl -sOL https://archive.org/download/MAME223RomsOnlyMerged/${ZIPFILE})
+      #(cd "${ZIPDIR}";  curl -sOL https://archive.org/download/mame-0.221-roms-merged/${ZIPFILE})
+      #(cd "${ZIPDIR}";  curl -sOL https://archive.org/download/MAME216RomsOnlyMerged/${ZIPFILE})
     fi
-
+  
+    # Make ROM and ARC
     "${MRABIN}" -A -O "${DESTDIR}"/ -z "${ZIPDIR}" "${MRAFILE}" | egrep -v 'expected: None|Coin|Bonus|Credit|Demo|Level|Continu' 
-
-    RBF=$("${MRABIN}" -l "${MRAFILE}" | grep 'rbf name:' | sed 's/rbf name: //')
-    # Fix wrong named RBFs
-    RBF=$(echo $RBF | sed 's/jtcommando/jtcom/')
-    RBF=$(echo $RBF | sed 's/jtgunsmoke/jtgun/')
-    RBF=$(echo $RBF | sed 's/jtsectionz/jtsz/')
-    RBF=$(echo $RBF | sed 's/jtf1dream/jtf1drm/')
-
-    if [[ ! -f "${SRCDIR}/sidi/${RBF}.rbf" ]]; then
-      echo "RBF ${RBF} is missing for MRA `basename "${MRAFILE}"`, probably BETA"
-    else
-      RBFBASE=$(basename "$RBFFILE" | sed 's/_[0-9]\+.rbf//')
-      copy_changed "$SRCDIR/mist/${RBF}.rbf" "$DESTDIR/${RBF}.rbf"
-    fi
   done
 
   echo "Updating cores..."
-  find "${SRCDIR}/sidi" -type f -name '*.rbf' -print0  | while read -d $'\0' RBFFILE
+  find "${SRCDIR}/sidi" -type f -iname '*.rbf' -print0  | while read -d $'\0' RBFFILE
   do
     RBFNAME=`basename "${RBFFILE}"`
-    set_destdir "${RBFNAME}"
-    copy_changed "${RBFFILE}" "${DESTDIR}/${RBFNAME}"
+
+    # Fix unorthodox RBF names 
+    RBFDEST=$(echo "${RBFNAME}" | sed 's/jtsf_20210519/jtsf/')
+
+    set_destdir "${RBFDEST}"
+    mkdir -p "${DESTDIR}"
+    copy_changed "${RBFFILE}" "${DESTDIR}/${RBFDEST}"
   done
 
   touch "${FLAGFILE}"
@@ -98,7 +110,7 @@ set_destdir () {
     for i in "${!RBFS[@]}"; do
       [[ "${TESTFILE}" == *"${RBFS[i]}"* ]] && DESTDIR="${MYPATH}/Arcade/JOTEGO-CPS0"
     done
-    [[ ${TESTFILE} == *jtcps1* ]] && DESTDIR="${MYPATH}/Arcade/JOTEGO-CPS1"
+    [[ "${TESTFILE}" == *jtcps1* ]] && DESTDIR="${MYPATH}/Arcade/JOTEGO-CPS1"
     [[ "${TESTFILE}" == *jtcps15* ]] && DESTDIR="${MYPATH}/Arcade/JOTEGO-CPS15"
     [[ "${TESTFILE}" == *jtcps2* ]] && DESTDIR="${MYPATH}/Arcade/JOTEGO-CPS2"
     [[ "${TESTFILE}" == *jtdd* ]] && DESTDIR="${MYPATH}/Arcade/JOTEGO-DD"
@@ -118,7 +130,7 @@ copy_changed () {
 
   if [[ -f "${SRC}" && ! -f "${DST}" ]]; then
     cp -p "${SRC}" "${DST}"
-    echo Update $DST
+    echo Update "${DST}"
   else
     if [[ "${SRC}" -nt "${DST}" ]]; then
       cp -p "${SRC}" "${DST}"
@@ -128,9 +140,9 @@ copy_changed () {
       MD5SRC=`md5sum "${SRC}" | awk '{print $1}'`
       MD5DST=`md5sum "${DST}" | awk '{print $1}'`
   
-      if [[ $MD5SRC != $MD5DST ]]; then
-        cp -p "$SRC" "${DST}"
-        echo Update $DST
+      if [[ "${MD5SRC}" != "${MD5DST}" ]]; then
+        cp -p "${SRC}" "${DST}"
+        echo Update "${DST}"
       fi
     fi
   fi

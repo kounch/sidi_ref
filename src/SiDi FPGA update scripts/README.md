@@ -4,7 +4,7 @@ Estos scripts permiten obtener la versión más reciente de uno o más cores del
 
 Están basados en [MIST FPGA update scripts](https://gist.github.com/squidrpi/4ce3ea61cbbfa3900e116f9565d45e74), pero aplicando cambios para hacerlos compatibles con macOS y la estructura del [Repositorio oficial de SiDi en GitHub](https://github.com/ManuFerHi/SiDi-FPGA/).
 
-Para funcionar necesitan que [esté instalado git](https://git-scm.com/download/mac), y, a fecha de escribir este texto, un mínimo de 6G de espacio en el disco, y 2G en la tarjeta SD, si se utilizan todos los scripts con todos los cores.
+Para funcionar necesitan que [esté instalado git](https://git-scm.com/download/mac), y, a fecha de escribir este texto, un mínimo de 7GB de espacio en el disco, y 2GB en la tarjeta SD, si se utilizan todos los scripts con todos los cores.
 
 ## Modo de uso
 
@@ -35,14 +35,52 @@ Las siguientes veces que se lance sólo actualizará aquellos ficheros que hayan
 
 El script utiliza una carpeta llamada `_temp/git/SiDi-FPGA` para almacenar una copia del repositorio oficial.
 
+### Actualizar cores de arcades (gehstock - brunosilva)
 
-### Actualizar cores de arcades
+Lanzar el script desde una shell de Terminal el script que actualiza los cores de arcades:
 
-Lanzar el script desde una shell de Terminal el script que actualiz los cores de jotego:
+    .../update_arcade.sh
+
+La primera ejecución rellenará las carpetas con los ficheros de cores y ROM asociados y que se encuentren [en el repositorio correspondiente](https://github.com/eubrunosilva/SiDi/tree/master/Arcade), según esta estructura, creando un directorio distinto por cada grupo de cores (`Atari BW Raster Hardware`, `Namco Pacman Hardware`, `Bagman Hardware`, etc.):
+
+    |
+    +-update_arcade.sh
+    |
+    +-Arcade
+        +-/GEHSTOCK
+        |   +-/Atari BW Raster Hardware
+        |      +-...rbf
+        |      +-...rom
+        |      +-...arc
+        |      (...)
+        +-(..)
+        (...)
+
+Las siguientes veces que se lance sólo actualizará aquellos ficheros que hayan cambiado desde la ejecución anterior.
+
+El script utiliza una carpeta llamada `_temp/git/SiDi` para almacenar una copia del repositorio oficial.
+
+También utiliza una carpeta llamada `_temp/mame_gehstock` para almacenar los ficheros zip con ROMs de [MAME](https://www.mamedev.org), que utiliza para construir los ficheros `.rom` para los cores. Si no encuentra algún fichero zip necesario, intenta descargarlo desde [Internet Archive](https://archive.org/download/MAME216RomsOnlyMerged).
+
+### Actualizar cores de arcades (jotego)
+
+Lanzar el script desde una shell de Terminal el script que actualiza los cores de jotego:
 
     .../update_jtcores.sh
 
-La primera ejecución rellenará las carpetas con los ficheros de cores y ROM asociados y que se encuentren [en el repositorio correspondiente](https://github.com/jotego/jtbin/tree/master/sidi).
+La primera ejecución rellenará las carpetas con los ficheros de cores y ROM asociados y que se encuentren [en el repositorio correspondiente](https://github.com/jotego/jtbin/tree/master/sidi), según esta estructura, creando un directorio distinto por cada grupo de cores (`BUBBLETOKIO`, `CONTRA`, `CPS0`, etc.):
+
+    |
+    +-update_jtcores.sh
+    |
+    +-Arcade
+        +-JOTEGO-(..)
+        |   +-jt...rbf
+        |   +-...rom
+        |   +-...arc
+        |   (...)
+        +-(..)
+        (...)
 
 Las siguientes veces que se lance sólo actualizará aquellos ficheros que hayan cambiado desde la ejecución anterior.
 
