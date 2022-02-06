@@ -138,6 +138,10 @@ El archivo `zxrom_catalog.json` es un objeto donde los nombres principales indic
 
 Script que permite instalar lo necesario en macOS para [compilar el firmware](../doc/Firmware.md#Compilación-del-firmware) de la placa.
 
+### mist2sidi.sh
+
+Script que adapta ficheros `qsf` de Quartus para MiST, de forma que sirvan para crear cores de SiDi. Se debe copiar al directorio donde estén los ficheros, y ejecutarlo desde Terminal.
+
 ## License
 
 BSD 2-Clause License
