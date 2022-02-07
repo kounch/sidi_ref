@@ -90,7 +90,7 @@ También utiliza una carpeta llamada `_temp/mame` para almacenar los ficheros zi
 
 ### Sincronizar a la tarjeta SD
 
-Una vez puestos al día los ficheros de cores y ROM, usando el script anterior, se puede usar `sync_to_sd.sh` para copiar los que sean diferentes a una tarjeta SD.
+Una vez puestos al día los ficheros de cores y ROM, usando el script anterior, se puede usar `sync_to_sd.sh` para copiar los que sean diferentes a una tarjeta SD. Además de copiar los ficheros, el script intentará configurar como invisibles los cores (RBF) de JOTEGO-... y, si encuentra la utilidad `mattrib` instalada en el sistema, procurará añadir el atributo a todos los directorios que lo necesitan (esta última opción requiere ejecutar el script con `sudo` o similar).
 
 Este script asume que la estructura de directorios en la tarjeta es como la siguiente:
 
@@ -108,14 +108,16 @@ Este script asume que la estructura de directorios en la tarjeta es como la sigu
     |   +-Fichero1.rbf
     |   +-Fichero2.rbf
     |   (...)
+    |   +-Archivo1.rom
+    |   +-Archivo1.rom
     |      
     +-Consoles/
     |   +-Fichero1.rbf
     |   +-Fichero2.rbf
     |   (...)
     |
-    +-Archivo1.rom
-    +-Archivo2.rom
+    +-Archivo1.vhd
+    +-Archivo2.vhd
     (...)
 
 Así, los ficheros de core (RBF) actualizados con `update_cores.sh` se copiarán todos juntos según su carpeta de origen (en `Computers`, etc.)
@@ -123,6 +125,10 @@ Así, los ficheros de core (RBF) actualizados con `update_cores.sh` se copiarán
 Para sincronizar los ficheros a la tarjeta SD, ejecutar el script desde una shell de terminal, indicando la ruta a la raíz de la tarjeta. Por ejemplo:
 
     ...sync_to_sd.sh /Volumes/SiDi
+
+O, también por ejemplo, si se desea utilizar `mattrib` para configurar los atributos de los directorios de cores:
+
+    sudo ..sync_to_sd.sh /Volumes/SiDi
 
 ## License
 
