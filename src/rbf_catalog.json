@@ -1,5 +1,5 @@
 {
-    "version": "20220204.001",
+    "version": "20220207.001",
     "sidi": {
         "description": "MiST / Mistica FPGA16 / SiDi",
         "hashtype": "sha256sum",
@@ -12,8 +12,10 @@
                 "platforms": {
                     "sidi": {
                         "versions": {
-                            "0 (Unknown)": "785f0f262163a0ca7a642981c9d177d0aa4045042dda4bfa38f536cd1f84eb6b",
-                            "1 (Unknown)": "97246a3dea4c66f13926e39e17d85ebde8e47583adb1a83be2b8457b28ae3786"
+                            "0 (Unknown)": "97246a3dea4c66f13926e39e17d85ebde8e47583adb1a83be2b8457b28ae3786",
+                            "20191215": "785f0f262163a0ca7a642981c9d177d0aa4045042dda4bfa38f536cd1f84eb6b",
+                            "20220206": "6827f2f1321d5d570b3814174b8ee3eaa64ec549f8a374a59372166d1065bb39",
+                            "20220207": "7baa18c1d862e056b2e5a587bb5152a58d66779ed23361103d00663e16fcb5fc"
                         }
                     }
                 }
