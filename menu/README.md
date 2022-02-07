@@ -10,4 +10,4 @@ copiar el archivo `menu.rbf` a la raiz de la tarjeta SD, pero con el nombre `cor
 
 ### Imagen de fondo
 
-Se puede añadir un archivo BMP, de 512x312 pixeles y 32-bit de color, que se usará como imagen de fondo. Renombrarlo como `MENU.ROM` y copiar a la raiz de la tarjeta SD.
+Se puede añadir un archivo BMP, de 512x312 pixeles y 32-bit de color, que se usará como imagen de fondo. Renombrarlo como `MENU.ROM` y copiar a la raiz de la tarjeta SD. Además, notar que la imagen se muestra con una proporción 4:3, por lo que se tendrá que ajustar el archivo (proporción 16:10) de forma adecuada para que la imagen no se vea distorsionada.

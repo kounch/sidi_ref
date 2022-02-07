@@ -32,29 +32,33 @@ main () {
     echo "  ${DIR_CORES[i]} cores..."
     if [[ -d "${MYPATH}/${DIR_CORES[i]}" ]]; then
       populate_dir "${MYPATH}/${DIR_CORES[i]}" "${SDDIR}/${DIR_CORES[i]}" "RBF"
+      populate_dir "${MYPATH}/${DIR_CORES[i]}" "${SDDIR}/${DIR_CORES[i]}" "ARC"
+      populate_dir "${MYPATH}/${DIR_CORES[i]}" "${SDDIR}/${DIR_CORES[i]}" "ROM"
+      populate_dir "${MYPATH}/${DIR_CORES[i]}" "${SDDIR}" "VHD"
     fi
   done
-
-  echo "  Computer ROMs..."
-  if [[ -d "${MYPATH}/Computer" ]]; then
-    populate_dir "${MYPATH}/Computer" "${SDDIR}" "ROM"
-  fi
 
   echo "Synchronizing (rsync) to SD..."
   # Arcade
   rsync -utr --modify-window=1 --exclude='*.ini' \
-             --exclude='.Trashes' --exclude='.fseventsd' --exclude='.DS_Store' \
-             --exclude='.Spotlight-V100' --exclude='System Volume Information' \
+             --exclude='.Trashes' --exclude='.fseventsd' --exclude='._*' \
+             --exclude='.DS_Store' --exclude='.Spotlight-V100' \
+             --exclude='System Volume Information' \
               "${MYPATH}/Arcade" "${DESTVOL}"
   # Other
   rsync -utr --modify-window=1 --exclude='*.ini' --exclude='*.CFG' \
              --exclude='*.RAM' --exclude='*.sav' --exclude='QXL.WIN' \
-             --exclude='.Trashes' --exclude='.fseventsd' --exclude='.DS_Store' \
-             --exclude='.Spotlight-V100' --exclude='System Volume Information' \
+             --exclude='.Trashes' --exclude='.fseventsd' --exclude='._*' \
+             --exclude='.DS_Store' --exclude='.Spotlight-V100' \
+             --exclude='System Volume Information' \
               "${SDDIR}/" "${DESTVOL}"
 
   echo "Clearing SD temp data..."
   rm -rf "${SDDIR}" 2>/dev/null
+
+  echo "Removing unnecessary macOS files..."
+  find "${DESTVOL}" -name "._*" -exec rm {} 2>/dev/null \;
+  find "${DESTVOL}" -name ".DS_Store" -exec rm {} 2>/dev/null \;
 
   echo "Finished"
 }
