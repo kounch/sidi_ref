@@ -138,7 +138,25 @@ El archivo `zxrom_catalog.json` es un objeto donde los nombres principales indic
 
 Script que permite instalar lo necesario en macOS para [compilar el firmware](../doc/Firmware.md#Compilación-del-firmware) de la placa.
 
-### mist2sidi.sh
+## mist-firmware-translator.py
+
+Script que permite modificar el código fuente del firmware, para traducir los textos a otro idioma, antes de compilarlo.
+
+Necesita un fichero de texto con líneas con el formato:
+
+    "cadena de texto original"="cadena de texto traducida"
+
+Cada `"cadena de texto original"` debe coincidir con alguna cadena de texto entre `"` en el código fuente original (ficheros `menu-8bit.c` y `menu.c`). Por ejemplo
+
+    "Image selected: %s\n"="Imagen elegida: %s\n"
+
+Para utilizarlo, se debe indicar la ruta al fichero de texto con las traducciones y al directorio donde se encuentre el código fuente. Por ejemplo:
+
+    python3 ..mist-firmware-translator.py -s .../mist-firmware-es.txt -S .../mist-firmware
+
+Se adjunta un fichero `mist-firmware-es.txt` con un ejemplo de traducción al castellano.
+
+## mist2sidi.sh
 
 Script que adapta ficheros `qsf` de Quartus para MiST, de forma que sirvan para crear cores de SiDi. Se debe copiar al directorio donde estén los ficheros, y ejecutarlo desde Terminal.
 
