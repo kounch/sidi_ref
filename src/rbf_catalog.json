@@ -1,5 +1,5 @@
 {
-    "version": "20220207.001",
+    "version": "20220218.001",
     "sidi": {
         "description": "MiST / Mistica FPGA16 / SiDi",
         "hashtype": "sha256sum",
@@ -1698,7 +1698,8 @@
                     "sidi": {
                         "versions": {
                             "20220107": "71dfca77b0679637e3cc20a83be5f7f785772712523ec6546fd805e00e67c8e0",
-                            "20220211": "1d1f7a6786c507dd066464216035e6b520747a53bab8f6f7a9cf957fa6ad1a13"
+                            "20220211": "1d1f7a6786c507dd066464216035e6b520747a53bab8f6f7a9cf957fa6ad1a13",
+                            "20220218": "1c887854d419e7eb33f5bcea99963b0a73bd595edc2a3dca65b4bff7442e60af"
                         }
                     }
                 }
@@ -2017,6 +2018,15 @@
                     }
                 }
             },
+            "Midnight Resistance (jtmidres)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {               
+                            "20220218": "c1bd87267f3f389b5af7e1598cc61f234377a54c987a35050e9617bac8bb201b"
+                        }
+                    }
+                }
+            },
             "Mikie (jtmikie)": {
                 "platforms": {
                     "sidi": {
@@ -2042,7 +2052,8 @@
                     "sidi": {
                         "versions": {
                             "20220107": "1b87c9f359960db838c0a552d257148c2a6b5090ab0183d3b6c555b0e5ee3eab",
-                            "20220211": "8f416feedccbac8d0b45810cc6dda787677c5dc7691bd1237054fbe8c40136e5"
+                            "20220211": "8f416feedccbac8d0b45810cc6dda787677c5dc7691bd1237054fbe8c40136e5",
+                            "20220218": "469ae01016aa5fe5542168c6ae5fb7f621f94facba46a1a8de8be5cade903547"
                         }
                     }
                 }
