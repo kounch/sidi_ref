@@ -1700,7 +1700,8 @@
                         "versions": {
                             "20220107": "71dfca77b0679637e3cc20a83be5f7f785772712523ec6546fd805e00e67c8e0",
                             "20220211": "1d1f7a6786c507dd066464216035e6b520747a53bab8f6f7a9cf957fa6ad1a13",
-                            "20220218": "1c887854d419e7eb33f5bcea99963b0a73bd595edc2a3dca65b4bff7442e60af"
+                            "20220218": "1c887854d419e7eb33f5bcea99963b0a73bd595edc2a3dca65b4bff7442e60af",
+                            "20220311": "52a27a3a1c5c230de35e41529eee6da43d4fae3cd90897161a6975af98b65f0b"
                         }
                     }
                 }
@@ -2023,7 +2024,8 @@
                 "platforms": {
                     "sidi": {
                         "versions": {               
-                            "20220218": "c1bd87267f3f389b5af7e1598cc61f234377a54c987a35050e9617bac8bb201b"
+                            "20220218": "c1bd87267f3f389b5af7e1598cc61f234377a54c987a35050e9617bac8bb201b",
+                            "20220311": "d1d338578d38deea946d893ceeade4d7701f77d8ca90d09764a18cf88958bc54"
                         }
                     }
                 }
@@ -2054,7 +2056,17 @@
                         "versions": {
                             "20220107": "1b87c9f359960db838c0a552d257148c2a6b5090ab0183d3b6c555b0e5ee3eab",
                             "20220211": "8f416feedccbac8d0b45810cc6dda787677c5dc7691bd1237054fbe8c40136e5",
-                            "20220218": "469ae01016aa5fe5542168c6ae5fb7f621f94facba46a1a8de8be5cade903547"
+                            "20220218": "469ae01016aa5fe5542168c6ae5fb7f621f94facba46a1a8de8be5cade903547",
+                            "20220311": "02f48eca0ffb285345aa457c57f451d0b430af076e3def2050b97afbbbd4e8cd"
+                        }
+                    }
+                }
+            },
+            "Sly Spy (jtlsyspy)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220311": "a437b1949b21eafdbd094cbed07e9aeb6ec3a0013928f8ae8f27ecac89ba545e"
                         }
                     }
                 }
