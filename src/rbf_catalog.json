@@ -2050,6 +2050,15 @@
                     }
                 }
             },
+            "Road Fighter (jtroadf)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220318": "54361041b90bbe113a13e650e247dbc8b1e5c6e6012659046bf493d62fb846f5"
+                        }
+                    }
+                }
+            },
             "Robocop (jtcop)": {
                 "platforms": {
                     "sidi": {
