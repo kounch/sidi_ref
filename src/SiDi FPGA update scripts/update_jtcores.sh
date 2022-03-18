@@ -30,7 +30,7 @@ main () {
     (cd "${BASEDIR}/git"; git clone https://github.com/jotego/jtbin.git)
   fi
   # Update cores and mra from jtbin github
-  (cd "${SRCDIR}"; git pull > /dev/null)
+  (cd "${SRCDIR}"; git pull)
 
   #Set timestamps on git files to match repository commit dates
   (cd "${SRCDIR}"; git ls-files | sed "s/'/\\\'/g" | xargs -I{} bash -c 'touch -t $(git log -n1 --pretty=format:%cd --date=format:%Y%m%d%H%M.%S -- "{}") "{}" 2>/dev/null')
@@ -50,7 +50,13 @@ main () {
     RBF=$(echo "${RBF}" | sed 's/jtsectionz/jtsz/')
     RBF=$(echo "${RBF}" | sed 's/jtf1dream/jtf1drm/')
     # Fix unorthodox RBF names 
-    RBFORIG=$(echo "${RBF}" | sed 's/jtsf.rbf/jtsf_20210519.rbf/')
+    RBFORIG=$(echo "${RBF}" | sed 's/jtsf/jtsf_20210519/')
+    RBFORIG=$(echo "${RBFORIG}" | sed 's/jts16a2/jts16a2_20220314/')
+    RBFORIG=$(echo "${RBFORIG}" | sed 's/jts16b1/jts16b1_20220314/')
+    RBFORIG=$(echo "${RBFORIG}" | sed 's/jts16b2/jts16b2_20220314/')
+    RBFORIG=$(echo "${RBFORIG}" | sed 's/jts16b3/jts16b3_20220314/')
+    RBFORIG=$(echo "${RBFORIG}" | sed 's/jts16b$/jts16b_20220314/')
+    RBFORIG=$(echo "${RBFORIG}" | sed 's/jts16$/jts16_20220314/')
 
     set_destdir "${RBF}"
     mkdir -p "${DESTDIR}"
@@ -87,6 +93,12 @@ main () {
 
     # Fix unorthodox RBF names 
     RBFDEST=$(echo "${RBFNAME}" | sed 's/jtsf_20210519/jtsf/')
+    RBFDEST=$(echo "${RBFDEST}" | sed 's/jts16a2_20220314/jts16a2/')
+    RBFDEST=$(echo "${RBFDEST}" | sed 's/jts16b1_20220314/jts16b1/')
+    RBFDEST=$(echo "${RBFDEST}" | sed 's/jts16b2_20220314/jts16b2/')
+    RBFDEST=$(echo "${RBFDEST}" | sed 's/jts16b3_20220314/jts16b3/')
+    RBFDEST=$(echo "${RBFDEST}" | sed 's/jts16b_20220314/jts16b/')
+    RBFDEST=$(echo "${RBFDEST}" | sed 's/jts16_20220314/jts16/')
 
     set_destdir "${RBFDEST}"
     mkdir -p "${DESTDIR}"
