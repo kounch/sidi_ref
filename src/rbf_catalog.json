@@ -95,6 +95,15 @@
                     }
                 }
             },
+            "Apple I": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220402": "20bc49137e4f62f902d17438ed2a3a6c6db2ac61655445f63139ea93d73edc1d"
+                        }
+                    }
+                }
+            },
             "Apple IIe": {
                 "platforms": {
                     "sidi": {
@@ -301,7 +310,8 @@
                             "20191217": "03ea4d857a7dd23ed30c2dea7f5ee2247be07f54b55306d95d558af40c69538a",
                             "200323": "b086b549de2a10e5f319dd87e15533eb866dd47ba1908fc40f096339da2afe0c",
                             "20200120": "345ae3c0cd8c3523742e256dd254aa54c5587ac015401380cdf57ceece2d21a4",
-                            "20210301": "1d401ab8b2badce008c56d4c39642f44a4e8492d50cda4834f40bcfbcd47f87d"
+                            "20210301": "1d401ab8b2badce008c56d4c39642f44a4e8492d50cda4834f40bcfbcd47f87d",
+                            "20220402": "1db3eeb7cb461ecd6c0684c1915af0dde714d3d0e567e97c648b66eb3dcc7d9f"
                         }
                     }
                 }
@@ -391,7 +401,8 @@
                             "20210716": "49ad7aad83cfb8a5dbcf4f420701970e1a3b877beb927097c19954752e51af7e",
                             "20210723": "7c6044e5f8cb70d8092c2bd6462616169011b75aa025bcfa03e5bea97813902d",
                             "20210803": "565bc3723b27641a7826dbe949bcef1c4fd5bef4a080be87e0f4b09f4edde802",
-                            "20220219": "8c00567b0521b6c140e11f2f5b52259ec3fd9ad0e9be0e2a82ee87e6e547525e"
+                            "20220219": "8c00567b0521b6c140e11f2f5b52259ec3fd9ad0e9be0e2a82ee87e6e547525e",
+                            "20220402": "4a392930e9377b230a340240ce423992526e3ff9dba14f733027d12e79ff816b"
                         }
                     }
                 }
@@ -522,7 +533,8 @@
                         "versions": {
                             "20210401": "61e6c384015f7e8e57feb2e4cebff1c2a8a8bf1d7d24dbd22190aed938a02ee1",
                             "20200911": "e1e5ac13f8aba81c8ee1d45f5e373254175f8a6a96580b156a694eaf7a5b868e",
-                            "20201215": "1714da49cf22f896e30c07a8e6773e5912801515869c9aeb42146096c303be8a"
+                            "20201215": "1714da49cf22f896e30c07a8e6773e5912801515869c9aeb42146096c303be8a",
+                            "20220402": "7883adbb640367f28b390f5f7429ba3dfb3c2877dc8fff134cde3cbbc5d7c84c"
                         }
                     }
                 }
@@ -548,7 +560,8 @@
                             "20210525": "9f42bbf0db091571dbfec76ccb16d3c1532b46f9f49c7a4482763935594a842a",
                             "20191205": "e1374f05ef04b17ab00045f6406a2ae0b555f9c76e38f8fd70271c4fb249dac6",
                             "20200125": "25f77a7cdf98d9b1828e101d2b2767f10e37281ceb15b86264416998c6effadb",
-                            "20211014": "6d5b36f2d0c9a53930c5658ac69fc7846a5085c7fa0b8e59adf515cde859659d"
+                            "20211014": "6d5b36f2d0c9a53930c5658ac69fc7846a5085c7fa0b8e59adf515cde859659d",
+                            "20220402": "4c71f635d5052aec401ece2a93597951b1e37fbbbf9b1dd5c4d738010bf2e20a"
                         }
                     }
                 }
@@ -610,7 +623,8 @@
                             "20210302": "5a3b50ede16da092d5493f13ac2dd6fc75f61cc28a4f41c80c58923d297d7461",
                             "20210401": "ce9665d8b9dbed93f8b1ba1b43f58421ce416145bf9f1b61572671bf10d21e9e",
                             "20210828b": "bcd95f50d3f43cebd256dfb3b06fe1f0f45566bf40f4966209968e377c99ced1",
-                            "20191213": "b0b9f1b7ee9a0345f4b506068fb9c500dfdd666f94818d9d2c450003e69e8a46"
+                            "20191213": "b0b9f1b7ee9a0345f4b506068fb9c500dfdd666f94818d9d2c450003e69e8a46",
+                            "20220402": "99daa2e184cca870cacece2708f30d2e7fd10e7ae69eb950e51d61674d50dedd"
                         }
                     }
                 }
