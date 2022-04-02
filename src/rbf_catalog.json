@@ -2050,6 +2050,15 @@
                     }
                 }
             },
+            "Ping Pong (jtpinpon)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220401": "9d5021f8c24cc135113f5c09999f265dffe1d508114cf149f0f6b59d0899f5ee"
+                        }
+                    }
+                }
+            },
             "Road Fighter (jtroadf)": {
                 "platforms": {
                     "sidi": {
