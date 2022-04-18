@@ -1,5 +1,5 @@
 {
-    "version": "20220408.001",
+    "version": "20220418.001",
     "sidi": {
         "description": "MiST / Mistica FPGA16 / SiDi",
         "hashtype": "sha256sum",
@@ -1912,7 +1912,8 @@
                             "20210605": "7c8b9ac84f584b4d6e07f770cb8a405d26d60e7c288b44e59aed6b4253b50992",
                             "20210611": "c30ce590d67c0984cf3dbc4cddcb09a368f8bd4f88b9f00f2cff91d1f310f28f",
                             "20210710": "6b6179f92efc3db71e64b7e2e7ae06e2d2af203ce71faef5ad9647ff24b83e0b",
-                            "20211121": "e97e2d702616c1960e6bdc776222a746d11bddc1501d2398573ee9075387741c"
+                            "20211121": "e97e2d702616c1960e6bdc776222a746d11bddc1501d2398573ee9075387741c",
+                            "20220417": "5d017ee1b45a6ed9ce4ef76ec9aa3ff61729db6cc31d68aa1b002fe8abac0911"
                         }
                     }
                 }
@@ -1930,7 +1931,8 @@
                             "20210213": "1ee4a527bf2fea98e3a20c01988cc8d30a8a79b9bf708ff5915f4e51eeb10845",
                             "20210524": "33e1b427129bf9003dd7d787348cfa84af8270d9996b16ee547f638a5374f75e",
                             "20210605": "5e259b091cec6cf0d5fec7af6a76e97018e12f61d729a1a369b8b92f5bfcc28d",
-                            "20211121": "f5413365c13dc864ba0b151883a168d018df7c6ee485b034138a0f6cae6afb55"
+                            "20211121": "f5413365c13dc864ba0b151883a168d018df7c6ee485b034138a0f6cae6afb55",
+                            "20220417": "145c8c68b7e70b4c46c606721f31da89fd01d0d4282b7a0ff7e8b2cc3b9acef2"
                         }
                     }
                 }
@@ -1988,7 +1990,8 @@
                             "20210527": "df53a4d6cf003b3804c59cdf435824d254bb79d841d4e916e0efcbd779e84724",
                             "20210611": "6259f2a6a203f9c22650a07b1186dffc41806b25708721c5aa366b828e366905",
                             "20210618": "0d407c197d00b6400223b6a9c04b0d97e6e5426762d6acc90bb648ca81182dab",
-                            "20210710": "7ac161f1126df7f1c649408e7ecb55b44774d73dad0c41741c746ef76ec70a73" 
+                            "20210710": "7ac161f1126df7f1c649408e7ecb55b44774d73dad0c41741c746ef76ec70a73",
+                            "20220417": "b46218738f489b80cc3cf19ae06db3f7dc2a82d52c73c21f1b06ffb970502af3"
                         }
                     }
                 }
@@ -2057,7 +2060,8 @@
                         "versions": {
                             "20220121": "73fa0b7863470f91b82c25b659aad10a48d143e5aee3b0ab3eedc59c8b954126",
                             "20220204": "878b679dfefe50ddd4939d6057eeb160d437906fbf33dc494d419ed3df469001",
-                            "20220408": "fcac0e32405abdf535cde58856c389119acf41c104c461abe19b4152bf1a1082"
+                            "20220408": "fcac0e32405abdf535cde58856c389119acf41c104c461abe19b4152bf1a1082",
+                            "20220415": "2d3767c808be10dc08689dac8a9d8ec5000739582a47f58803ef26a0d97ee84c"
                         }
                     }
                 }
@@ -2076,7 +2080,8 @@
                 "platforms": {
                     "sidi": {
                         "versions": {
-                            "20220401": "9d5021f8c24cc135113f5c09999f265dffe1d508114cf149f0f6b59d0899f5ee"
+                            "20220401": "9d5021f8c24cc135113f5c09999f265dffe1d508114cf149f0f6b59d0899f5ee",
+                            "20230415": "6d19ed2d93ce07ac70a95834e8b2944da80642fffdd87d58a54e3b86c386f076"
                         }
                     }
                 }
@@ -2096,7 +2101,8 @@
                         "versions": {
                             "20220318": "54361041b90bbe113a13e650e247dbc8b1e5c6e6012659046bf493d62fb846f5",
                             "20220325": "17e657919b58347d106a36d47d299db62c59285374679a5fd4fd8d59abf19ad9",
-                            "20220408": "bfb550c02c3c9f4b7209b591bc1e0e12465799719ea838c949cde6e5fb725323"
+                            "20220408": "bfb550c02c3c9f4b7209b591bc1e0e12465799719ea838c949cde6e5fb725323",
+                            "20220415": "1fb6a4aaaa1279c6824ac43311a8847a30b34a1b70946e4306053c208b6f90c3"
                         }
                     }
                 }
@@ -2180,7 +2186,8 @@
                         "versions": {
                             "20211231": "0eb8d6155f98afb4131bb80a07d9931036a68d3652abc0c9c987c8458f8e178b",
                             "20220114": "efccf2e0ecab3f7102bda98773ee598abdc05ac1eb9e788bfad9613b31eb922f",
-                            "20220408": "6412d935a85f6a860cf497e7acafed1f73d62730ca081f4e902766dc6c0d2bb1"
+                            "20220408": "6412d935a85f6a860cf497e7acafed1f73d62730ca081f4e902766dc6c0d2bb1",
+                            "20220415": "b0a65a81fa7a85ecd4732b689cc329d14b058787f3ce16a7616e94bf578633fa"
                         }
                     }
                 }
@@ -2191,7 +2198,8 @@
                         "versions": {
                             "20211231": "a1c1119e60d5b3b841144b8f7ddbd97d1be293491b142916bbbe0b4d20e5fac1",
                             "20220114": "a3969a9b451e11d3df17cb935021d8fff7af94ec3e82582ab86a52493f35d973",
-                            "20220408": "252bf84db73447b12f8b507a559dfe0492b8a6a2f053c8a5213d20d24280c0b7"
+                            "20220408": "252bf84db73447b12f8b507a559dfe0492b8a6a2f053c8a5213d20d24280c0b7",
+                            "20220415": "85b7fe2f8e85b7968ffb7da49999b45bf0fff8137c17cb3768428e79144d39b2"
                         }
                     }
                 }
@@ -2219,7 +2227,8 @@
                     "sidi": {
                         "versions": {
                             "20210924": "8bb8ead6072f1e8c39793e33cb586d49faa834515f4a3c63a74cad920d3b98b2",
-                            "20211112": "e668cdc8cf8fb4d63d7fe325c75179a710ea631456f52f4fc452e7d8df89a576"
+                            "20211112": "e668cdc8cf8fb4d63d7fe325c75179a710ea631456f52f4fc452e7d8df89a576",
+                            "20220415": "1cbe930953d9fd466777a87f8ded8e8e1fe1ae3d8bcee6639cefd6f33c1ad314"
                         }
                     }
                 }
@@ -2228,7 +2237,8 @@
                 "platforms": {
                     "sidi": {
                         "versions": {
-                            "20210924": "128ae9a803e9cd612578b93b43e21078cec6c196052451e8aef3bb1b84b526de"
+                            "20210924": "128ae9a803e9cd612578b93b43e21078cec6c196052451e8aef3bb1b84b526de",
+                            "20220415": "479e22aef9f4539833caa7c8d8c1d3a1ba71b969afed3bef6cf8aaecbb968b8d"
                         }
                     }
                 }
@@ -2239,7 +2249,8 @@
                         "versions": {
                             "20210924": "b14a71693109680eb5d6bbcdebef798d885b30ebee426466ec8fc6ca4bd4ac05",
                             "20211112": "2f9f498aa90d1fbe78da0cdaf6d5bc0e14f52f8b691e6235e920e50e386e8a25",
-                            "20220128": "df57bf5121f28710dc01f81100e8a907732ab8a3b773ae4e77a4c08c35fd12f5"
+                            "20220128": "df57bf5121f28710dc01f81100e8a907732ab8a3b773ae4e77a4c08c35fd12f5",
+                            "20220415": "43179edf799ffff7d20b9b0ffd0afc00113a408ba86923aa1106658a26baaa13"
                         }
                     }
                 }
@@ -2249,7 +2260,8 @@
                     "sidi": {
                         "versions": {
                             "20210924": "2a8e872b3d048145b03cfd429f50e92e543052eaf4dd00afb226f5ae2b5090ac",
-                            "20211112": "71450c9a0e1fe32c388a3f5ea3e1759f0b515df1ce6025322f26e8fc97e89020"
+                            "20211112": "71450c9a0e1fe32c388a3f5ea3e1759f0b515df1ce6025322f26e8fc97e89020",
+                            "20220415": "4f8bafab2c05fba032791b29c4a0d8a1d6cea7be31b6d0e625c55afb8522a29e"
                         }
                     }
                 }
@@ -2259,7 +2271,8 @@
                     "sidi": {
                         "versions": {
                             "20210924": "74366016177d20d31fe39e5775870990b4612ece63f639ffe5fd5fca55361fbc",
-                            "20211112": "d076d6f7df6261a1d56337925cbb83110e9de38500de7aa5d46c7f80ade339a9"
+                            "20211112": "d076d6f7df6261a1d56337925cbb83110e9de38500de7aa5d46c7f80ade339a9",
+                            "20220415": "0234a116ef4637331070e01370cd58f0420158d88c34fccf7f3b3aaf7740f70a"
                         }
                     }
                 }
@@ -2269,7 +2282,8 @@
                     "sidi": {
                         "versions": {
                             "20210924": "2d707bb9083b615dccbff14abb0348e1a474105bf2c18b2785acf09fdfe7888e",
-                            "20211112": "71cc9df7b9dd1bb4e18f0c2d13eeb255e8ae0e0feedd9b8424307aa8d03cc564"
+                            "20211112": "71cc9df7b9dd1bb4e18f0c2d13eeb255e8ae0e0feedd9b8424307aa8d03cc564",
+                            "20220415": "ec2400e405c97b20304f46303ef30fe645c78d98c267192055af651a04961387"
                         }
                     }
                 }
@@ -2290,6 +2304,15 @@
                             "20210611": "d17f654226e5659438d34eb6b894d2422cc596eed1ca5e1806fbef3fe8c8dc4c",
                             "20210618": "657901d0edb8e912a07fca10ec25256430135e12738ccdf6a48843016c069870",
                             "20210710": "37a8a510786883b4da4f5e97717992029e6624ea62295ceb38b6751aef077fbc"
+                        }
+                    }
+                }
+            },
+            "Track & Field (jttrack)": {
+                "platforms": {
+                    "sidi": {
+                        "versions": {
+                            "20220415": "7a57b3e575369b358fe927ed68e211382518dbd6a803eda7044e5b32570c14bf"
                         }
                     }
                 }
@@ -2337,7 +2360,8 @@
                     "sidi": {
                         "versions": {
                             "20211224": "64f9b8a3109d01c914de6ff773d99af848383dbf1692a9bd27c9a8939bc155ab",
-                            "20220408": "6d349cb75300a6d752988eac8ac71261a2e4240fd87d3bd236e6c572790c4c8c"
+                            "20220408": "6d349cb75300a6d752988eac8ac71261a2e4240fd87d3bd236e6c572790c4c8c",
+                            "20220415": "5f883ab5ce2a695fef5551d86f0b0130b830f704274419d080c20f46a608730e"
                         }
                     }
                 }
@@ -2348,7 +2372,8 @@
                         "versions": {
                             "20211224": "ffaceb37be5e53455ca0a51f5a57e0bc8206c2ca01c1360cc19577863ff9f563",
                             "20220114": "16908839b16063f5a3972f1dc84b7fde82b361b5041aab3f59bc37fadc007052",
-                            "20220408": "6c6323b5b2c6f20ef509599e7883ca9c44f6cc65ec8a209e689cb84becaf1d8b"
+                            "20220408": "6c6323b5b2c6f20ef509599e7883ca9c44f6cc65ec8a209e689cb84becaf1d8b",
+                            "20220415": "d6ad81eef8b9f3951dcde5842127c2edfe543947e0a8b38ac75c45e9cd4c1cb3"
                         }
                     }
                 }
