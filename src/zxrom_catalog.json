@@ -1,5 +1,5 @@
 {
-    "version": "20220213.001",
+    "version": "20220704.001",
     "ROM": {
         "description": "ROM File",
         "hashtype": "sha256sum",
@@ -103,7 +103,8 @@
                 "ZX Spectrum 48K Cargando Leches": "895240ca1059c7f176cd6702c52c82dc2596591bdcbc9f205474db7a3110de31",
                 "ZX Spectrum 48K Cargando Leches (Ant)": "2cfbeef248657810448ec028042520311e9ec572858d71dccf1aec0c64607070",
                 "Jamma Demo": "ee87c52f38c752bd78b44d16ac4da8878ea6b4326ed81f7c2d19944f2ce8a55f",
-                "ZX Spectrum (Jozsef Laszlo FPGA Core)": "1653896cffae48bdc6d783535e7e652a027bfcb2e708c4b84b7f786d643225b7"
+                "ZX Spectrum (Jozsef Laszlo FPGA Core)": "1653896cffae48bdc6d783535e7e652a027bfcb2e708c4b84b7f786d643225b7",
+                "ZX Spectrum 48K (R. Guerra)": "97159d8ed7aa51a5a8c6c5bffa214c145d8082641b1b423fd64ccfc5e16c9e1f"
             }
         },
         "32K Spectrum ROM": {
@@ -117,9 +118,11 @@
                 "SE Basic IV 4.2 20.07.15 Morton": "5b513e45a7448f00706aaffb8db639fd7a0eda6ae9b3224af0f4d172f4792e3b",
                 "SE Basic IV 4.2 20.09.30 Iggy": "121dcf1571a9be7c83b1e28f6d313495bd89909abe65b227301bc9a4282f72c7",
                 "SE Basic IV 4.2 20.01.22 Gaff": "3949fdf325fad54c4cee421d42aef4e05e756fdb96af69b7c7e5809a0df8449e",
+                "SE Basic IV 4.2-b9 Cordelia": "297e4a6b3ea9246d9966efa3e105f15b0a5c4f16589d2a71d917c170c2069593",
                 "TS2060 by Daniel A. Nagy 2021.10.22": "af1279ce8c264b3491f31db4b249048c11bc563791c2f5293b5fb9c59a4aba54",
                 "TS2060 2021.10.27": "de8a0f0a71af9dec4f802cb5b6ec6cdba2d51cddccb5e2a53eef9f045a59691e",
                 "TS2060 by Daniel A. Nagy 22.01.15": "b51b685b0e9261bd0bae6f333d8a658bc73cfcfa4e52b2a8099064a6d2c79232",
+                "TS2060 by Daniel A.Nagy 22.01.27": "39bbc2f29c21c3570a05dcf9e1407d0751382c31a89c666f67fff2758fd0b79a",
                 "Timex Computer 2068": "c3df7f1507b2037e38ab1f8866457934bd9aa8ff4d692cd94fcd63949a372e72",
                 "Timex Sinclair 2068": "6fa699524a7e78aa547a375bae58ab32613d8e61a6f16c83be881c41cee0ac53",
                 "Timex Sinclair 2068 (Rikyarg)": "d1d1962565ca5250116a5722533e58221d2f3dbeede80b1d45b5b1f0d5a56fb5",
@@ -134,7 +137,8 @@
                 "ZX Spectrum +2 Gris ES": "02f9cd74a3f768e60709287999d9c251288afffd796a3985f1cf840045d31f68",
                 "ZX Spectrum 128K Derby+ 32K ROM": "df7181b671ff9fa739bc9f1065e7cb9b04e3f0bd04c4064189dc11f07b761634",
                 "ZX Spectrum 128K EN": "c1ff621d7910105d4ee45c31e9fd8fd0d79a545c78b66c69a562ee1ffbae8d72",
-                "ZX Spectrum 128K ES": "51d291fb08a0d4461b714114ef991e996784ec7ee6be8789382dc0781121e08e"
+                "ZX Spectrum 128K ES": "51d291fb08a0d4461b714114ef991e996784ec7ee6be8789382dc0781121e08e",
+                "ZX Spectrum 128K EN (R. Guerra)": "242a8baa69d121b64de0455ee039240e689f055877966e48c455e6a362000eae"
             }
         },
         "64K Spectrum ROM": {
@@ -158,12 +162,14 @@
                 "ZX Spectrum +2e EN (TAP-POKEMIN)":"2c151c08139b6c88e032ef10003d636620d20373c3c94ec80a2e27de4f49f05a",
                 "ZX Spectrum +2e ES (DivMMC-TAP)": "bd8d54c993910fc246653cbd417068c5a9cd6646108d2fd6101891cd86ffb45a",
                 "ZX Spectrum +2e ES (TAP-POKEMIN)": "720c26e34d400ae0154acf0ac9ee7f3bfb2c0e436c546dc377bbdb3038f62345",
+                "ZX Spectrum +2e ES (TAP-POKEMIN) 2": "ff4a3ee2a01f39df56cf2851bfaadc29f760a66adec56bc32d975eb99f13ee8c",
                 "ZX Spectrum +3e EN 1.43": "2259c1f5e87bde9ddcace4e91f0f0880fd593519f5a0e676e7dc35a80aa75831",
                 "ZX Spectrum +3e EN (DivMMC) 4.0": "18c35440b422535c1af598ce19899450d3dd9fd6d5d8734bd279be55943b58a6",
                 "ZX Spectrum +3e EN (ZXMMC) 4.0": "2d779bac8d4f870b7c33b8f2eb06a66d257822b6811e116e11204cffc7eb159e",
                 "ZX Spectrum +3e ES (ZXMMC) 4.0": "d9be501bac8796b60deaf26cad558ef203539af18ffcbeb108a685ed46499349",
                 "ZX Spectrum 128K Derby++ 64K rom": "5fe5d6bb92b516b5f1696a52679b23cc8a5301badc033e419aedb08e7d6f8fca",
-                "ZX Spectrum Next +3e 1.53": "b9b378221d61c328b6538bbd083786ec142e21eec3f5a53bba5f51ad7790568c"
+                "ZX Spectrum Next +3e 1.53": "b9b378221d61c328b6538bbd083786ec142e21eec3f5a53bba5f51ad7790568c",
+                "ZX Spectrum +3 EN (R. Guerra) 4.1": "9e658cd4ec407bfa09157d8730bca4b4e8f9a7e8a701cc8b7fd62051b9af7033"
             }
         },
         "128K Spectrum ROM": {
