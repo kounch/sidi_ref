@@ -224,6 +224,60 @@ Basado en el core [MiST ZX Spectrum 48K](http://joco.homeserver.hu/fpga/mist_zx4
 
 El fichero `zx48.rom` (16K) contiene la ROM del Spectrum y se puede analizar con `ZX ROM Catalog`.
 
+### Core ZX Spectrum Next
+
+Basado en el core 
+
+#### Teclado Spectrum Next
+
+`F9` - NMI
+
+#### Imagen VHD Spectrum Next
+
+Se puede crear una imagen de disco RAW para que utilice el core con esxdos (nombre por defecto `zxn.vhd`)
+
+Por ejemplo, siguiendo estos pasos, se puede tener una imagen de 2GB FAT32
+
+1. Crear arhivo vacío (4G)
+
+        dd if=/dev/zero of=zxnext.vhd bs=8m count=512
+
+2. Crear particiones en el archivo
+
+        fdisk -e zxnext.vhd
+        fdisk: could not open MBR file /usr/standalone/i386/boot0: No such file or directory
+        The signature for this MBR is invalid.
+        Would you like to initialize the partition table? [y] y
+        Enter 'help' for information
+        fdisk:*1> erase
+        fdisk:*1> edit 1
+                Starting       Ending
+        #: id  cyl  hd sec -  cyl  hd sec [     start -       size]
+        ------------------------------------------------------------------------
+        1: 00    0   0   0 -    0   0   0 [         0 -          0] unused  
+        Partition id ('0' to disable)  [0 - FF]: [0] (? for help) b
+        Do you wish to edit in CHS mode? [n] n
+        Partition offset [0 - 8388608]: [63] 128
+        Partition size [1 - 8388480]: [8388480] 
+        fdisk:*1> flag 1
+        Partition 1 marked active.
+        fdisk:*1> w
+        Writing MBR at offset 0.
+        fdisk: 1> q
+
+3. Preparar el nuevo disco:
+
+        hdiutil attach -imagekey diskimage-class=CRawDiskImage -nomount zxnext.vhd
+
+4. Tomar nota de cuál es el nuevo dispositivo (en este ejemplo `/dev/disk7s1`) y formatear en FAT16:
+
+        newfs_msdos -F 32 -v ZXNEXT -b 4096 -c 128 /dev/rdisk7s1
+        hdiutil detach /dev/disk7
+
+5. Montar imagen para poder copiar los ficheros que se quiera:
+
+        hdiutil attach -imagekey diskimage-class=CRawDiskImage zxnext.vhd
+
 ### Sintetizar Cores
 
 Es posible instalar Quartus Lite (buscar el [instalador QuartusLiteSetup-17.1.0.590-windows.exe](https://fpgasoftware.intel.com/17.1/?edition=lite&platform=windows&download_manager=dlm3)), con [Wineskin](https://github.com/Gcenx/WineskinServer).

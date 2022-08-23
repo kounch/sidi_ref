@@ -1,5 +1,5 @@
 {
-    "version": "20220704.001",
+    "version": "20220823.001",
     "ROM": {
         "description": "ROM File",
         "hashtype": "sha256sum",
@@ -104,7 +104,8 @@
                 "ZX Spectrum 48K Cargando Leches (Ant)": "2cfbeef248657810448ec028042520311e9ec572858d71dccf1aec0c64607070",
                 "Jamma Demo": "ee87c52f38c752bd78b44d16ac4da8878ea6b4326ed81f7c2d19944f2ce8a55f",
                 "ZX Spectrum (Jozsef Laszlo FPGA Core)": "1653896cffae48bdc6d783535e7e652a027bfcb2e708c4b84b7f786d643225b7",
-                "ZX Spectrum 48K (R. Guerra)": "97159d8ed7aa51a5a8c6c5bffa214c145d8082641b1b423fd64ccfc5e16c9e1f"
+                "ZX Spectrum 48K (R. Guerra)": "97159d8ed7aa51a5a8c6c5bffa214c145d8082641b1b423fd64ccfc5e16c9e1f",
+                "ZX Spectrum 48K (R. Guerra V2)": "9e369df6257473518a8c12cf967fa3ea5f7e3ad018cdd5c32c0b118648345c09"
             }
         },
         "32K Spectrum ROM": {
@@ -138,7 +139,8 @@
                 "ZX Spectrum 128K Derby+ 32K ROM": "df7181b671ff9fa739bc9f1065e7cb9b04e3f0bd04c4064189dc11f07b761634",
                 "ZX Spectrum 128K EN": "c1ff621d7910105d4ee45c31e9fd8fd0d79a545c78b66c69a562ee1ffbae8d72",
                 "ZX Spectrum 128K ES": "51d291fb08a0d4461b714114ef991e996784ec7ee6be8789382dc0781121e08e",
-                "ZX Spectrum 128K EN (R. Guerra)": "242a8baa69d121b64de0455ee039240e689f055877966e48c455e6a362000eae"
+                "ZX Spectrum 128K (R. Guerra)": "242a8baa69d121b64de0455ee039240e689f055877966e48c455e6a362000eae",
+                "ZX Spectrum 128K (R. Guerra V2)": "f5a1ffe7a916b9ef273eed833d9168b4be2a87a84030f2cb3a3f8d4b0e3bb57d"
             }
         },
         "64K Spectrum ROM": {
@@ -169,7 +171,8 @@
                 "ZX Spectrum +3e ES (ZXMMC) 4.0": "d9be501bac8796b60deaf26cad558ef203539af18ffcbeb108a685ed46499349",
                 "ZX Spectrum 128K Derby++ 64K rom": "5fe5d6bb92b516b5f1696a52679b23cc8a5301badc033e419aedb08e7d6f8fca",
                 "ZX Spectrum Next +3e 1.53": "b9b378221d61c328b6538bbd083786ec142e21eec3f5a53bba5f51ad7790568c",
-                "ZX Spectrum +3 EN (R. Guerra) 4.1": "9e658cd4ec407bfa09157d8730bca4b4e8f9a7e8a701cc8b7fd62051b9af7033"
+                "ZX Spectrum +3 (R. Guerra) 4.1": "9e658cd4ec407bfa09157d8730bca4b4e8f9a7e8a701cc8b7fd62051b9af7033",
+                "ZX Spectrum +3 (R. Guerra V2) 4.1": "939e2cf888a6d5b22107b49e960c85433bd0c3e08923195d3118171c85d2bc9b"
             }
         },
         "128K Spectrum ROM": {
