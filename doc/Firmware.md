@@ -6,7 +6,7 @@ Como el firmware es compartido con otras placas, se puede obtener siempre la úl
 
 ### macOS
 
-El programa [BOSSA](https://github.com/shumatech/BOSSA/releases) permite actualizar la Flash directamente desde macOS.
+El programa [BOSSA](https://github.com/shumatech/BOSSA/releases) permite actualizar la Flash directamente desde macOS. Hay disponible una versión compilada para Apple Silicon (sin firma digital ni notarizada), [aquí](../bin/bossa-1.9.1-arm64.dmg) (ver a continuación para instrucciones de cómo hacer esta compilación).
 
 ### Windows (Virtual)
 
@@ -41,3 +41,34 @@ Obtener último firmware
     make
 
 Una vez acabe, si no hay errores, el el directorio estará tanto el fichero `.bin` como el fichero `.upg`.
+
+## Compilación de BOSSA en MacOS para Apple Silicon
+
+Descargar el código fuente de wxwidgets 3.0 desde [la web oficial](https://www.wxwidgets.org/downloads/), descomprimir y compilar para Apple Silicon:
+
+    tar xjf wxWidgets-3.0.5.tar.bz2
+    cd xWidgets-3.0.5
+    ./configure --with-osx_cocoa --with-macosx-version-min=11.0 --with-macosx-sdk=/Library/Developer/CommandLineTools/SDKs/MacOSX11.sdk --disable-shared --disable-sys-libs --prefix=/usr/local --enable-macosx-arch=arm64
+    make
+    cd ..
+
+Clonar BOSSA del repositorio oficial:
+
+    git clone https://github.com/shumatech/BOSSA.git
+
+Modificar el fichero Makefile, indicando la ubicación del fichero `wx-config`:
+
+    (...)
+    WX_CXXFLAGS:=$(shell .../wxWidgets-3.0.5/wx-config --cxxflags --version=$(WXVERSION)) -DWX_PRECOMP -Wno-ctor-dtor-privacy -O2 -fno-strict-aliasing
+    (...)
+    WX_LIBS:=$(shell .../wxWidgets-3.0.5/wx-config --libs --version=$(WXVERSION)) $(WX_LIBS)
+    (...)
+
+Compilar BOSSA y generar aplicación:
+
+    cd .../BOSSA
+    make
+    make app
+    make install
+
+Usar los ficheros binarios, la aplicación o bien la imagen de disco generada, disponibles en `.../BOSSA/bin`.
