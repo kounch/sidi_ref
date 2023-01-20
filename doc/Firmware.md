@@ -6,7 +6,7 @@ Como el firmware es compartido con otras placas, se puede obtener siempre la úl
 
 ### macOS
 
-El programa [BOSSA](https://github.com/shumatech/BOSSA/releases) permite actualizar la Flash directamente desde macOS.
+El programa [BOSSA](https://github.com/shumatech/BOSSA/releases) permite actualizar la Flash directamente desde macOS. Hay disponible una versión compilada para Apple silicon (sin firma digital ni notarizada), [aquí](../bin/bossa-1.9.1-arm64.dmg).
 
 ### Windows (Virtual)
 
