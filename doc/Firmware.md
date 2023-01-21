@@ -56,8 +56,13 @@ Clonar BOSSA del repositorio oficial:
 
     git clone https://github.com/shumatech/BOSSA.git
 
-Modificar el fichero Makefile, indicando la ubicación del fichero `wx-config`:
+Modificar el fichero Makefile, indicando compilación para Apple Silicon y la ubicación del fichero `wx-config`:
 
+    (...)
+    ifeq ($(OS),Darwin)
+    COMMON_SRCS+=PosixSerialPort.cpp OSXPortFactory.cpp
+    COMMON_CXXFLAGS=-arch arm64 -mmacosx-version-min=10.9
+    COMMON_LDFLAGS=-arch arm64 -mmacosx-version-min=10.9
     (...)
     WX_CXXFLAGS:=$(shell .../wxWidgets-3.0.5/wx-config --cxxflags --version=$(WXVERSION)) -DWX_PRECOMP -Wno-ctor-dtor-privacy -O2 -fno-strict-aliasing
     (...)
